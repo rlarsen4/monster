@@ -1,16 +1,18 @@
 
 The following steps are done by the person wanting to copy text_adventure database onto their server:
 1. Copy the file text_adventure.out to the server where you want to install the database into from github.
+
 2. Start the mysql command in a terminal window on the server where you want to copy the database onto.
      mysql -u root
 
-3. create an empty database by the name you want. Don’t try to use an already existing NON EMPTY database. This will create problems beyond the scope of this how-to.
-     mysql> create database text_adventure;
+3. create an empty database named text_adventure. Don’t try to use any other database. This will create problems beyond the scope of this how-to.
+     TYPE IN     mysql> create database text_adventure;
 
 4. exit mysql
-5. Now restart mysql, specifying the database you want to use, and pass in the text_adventure.out file to populate it:
-     mysql -u root text_adventure < text_adventure.out
+
+5. Now restart mysql, specifying the database you want to use ie: text_adventure, and pass in the text_adventure.out file to populate it:
+     TYPE IN     mysql -u root text_adventure < text_adventure.out
 
 6. Now that you are in mysql you can do the following to verify the data has been imported.
-     use text_adventure;
-     show tables;
+     TYPE IN     use text_adventure;
+     TYPE IN     show tables;
