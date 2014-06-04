@@ -11,6 +11,7 @@ var playerWalk = function() {
     console.log("This monster is " + enemyStrength + " strong.");
     playerTurn();
 }
+
 var chooseMonsters = function() {
     var howManyMonsters = characterList[2].length;
     var currentMonster = characterList[2][Math.floor((Math.random() * howManyMonsters ))];
@@ -54,4 +55,87 @@ $('#runaway').on("click", runAway);
 
 $('#turn').on("click", playerWalk);
 
+
+
+/*
+(function(){
+
+    var Monstor = function(settings){
+        // override settings ....
+
+
+        this.attack = function(enemy){
+
+        }
+
+        this.die = function(){
+
+        };
+
+    };
+
+    var Player = function(settings){
+        // override settings ....
+
+        this.attack = function(enemy){
+
+            // Perform random
+            // if I win
+            enemy.die();
+
+            // if I lose
+            this.lose();
+
+        }
+
+        this.lose = function(){
+            this.settings.health = this.settings.health - 5;
+        };
+
+    };
+
+
+    // Load our db
+    var settings = db.fetch();
+    // foreach(setting in settings)
+    // if settings is monstor ...
+
+    // create a monstor
+    var monstor1 = new Monstor({
+            name: "Vampire",
+            bio: "I'm a vampire, I hate garlic.",
+            level: 6,
+            weapon: weaponType[0] 
+        });
+
+    // if setting is player
+    var player = new Player({
+        name: "Amazon",
+        bio: "I'm a hero",
+        weapon: weaponType[0],
+        health: 100,
+        score: 0
+    });
+
+
+})();
+
+// when user says move left
+    player.location = player.location - 1;
+    // Check if monstor is here
+    // foreach monstor in monstors
+    // if monstor.location == player.location
+        // alert user
+        // make run/attack buttons visible
+
+// When user clicks attack
+    // find monster in player location
+    // foreach monster is monsters
+        // if m.location == player.locatoin
+            // player.attack(m);
+            //
+
+
+
+*/
 });
