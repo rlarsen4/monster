@@ -37,6 +37,17 @@ var playerTurn = function () {
     }     
 }
 
+var plyrCurLoc = 2;
+var plyrPrevLoc = 1;
+
+var runAway = function() {
+    console.log('You pressed Run Away');
+    plyrCurLoc = plyrPrevLoc; // new player location
+    console.log('New player location', plyrCurLoc);
+}
+
+$('#runaway').on("click", runAway);
+
 $('#turn').on("click", playerWalk);
 
 });
