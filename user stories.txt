@@ -31,11 +31,41 @@ as a player, i want to see high scores
 as a player, i want to save my progress
 as a player, i want to log in so i can continue a previous level
 
+Nouns
+-----
+characters
+player 
+monster
+weapon
+map
+tile
+start
+text
+storyboard
+buttons
+    runaway
+health
+score
+database
+tables
+images
+
+Verbs
+-----
+run away 
+attack
+walk
+    math of walking (+1, +5)
+add health
+pick up item
+quit
+animate
 
 
 backlog
 -------
 schema
+
 track score
 add health
 run away
