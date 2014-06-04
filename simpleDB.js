@@ -19,14 +19,14 @@ monster = [
             name: "Vampire",
             bio: "I'm a vampire, I hate garlic.",
             level: 6,
-            weapon: weaponType[1] 
+            weapon: weaponType[0] 
         },
 
         monsterB = {
             name: "Ogre",
             bio: "Ogres are like onions",
             level: 7,
-            weapon: weaponType[0]
+            weapon: weaponType[1]
         }
     ]
 ]

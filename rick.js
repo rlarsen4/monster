@@ -1,5 +1,6 @@
 $(function() {
-    var currentMonster = characterList[2][1];
 
-    console.log(currentMonster.name + " holding a " + currentMonster.weapon);
+    var howManyMonsters = characterList[2].length;
+    var currentMonster = characterList[2][Math.floor((Math.random() * howManyMonsters ))];
+
 })

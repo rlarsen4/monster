@@ -11,6 +11,10 @@ var playerWalk = function() {
     console.log("This monster is " + enemyStrength + " strong.");
     playerTurn();
 }
+var chooseMonsters = function() {
+    var howManyMonsters = characterList[2].length;
+    var currentMonster = characterList[2][Math.floor((Math.random() * howManyMonsters ))];
+};
 
 var playerTurn = function () {
     var playerAttack = Math.floor((Math.random() * 12));
