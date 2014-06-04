@@ -23,7 +23,7 @@ as a player, i want to see my character
 as a player, i want to see some scenery (static)
 as a player, i want to change weapons
 
-MNT
+MNT 
 ---
 as a player, i want to 
 as a player, i want to choose a level
@@ -60,14 +60,48 @@ add health
 pick up item
 quit
 animate
-
+encounter monster
 
 backlog
 -------
-schema
+write a choosePlayer()
+write a startGame()
+write a playerWalk() function
+    randomize low chance of item, high chance of monster
+write a playerTurn() function (or fight)
+    monster is chosen randomly by chooseMonster()
+    playerAttack is a random number
+    weaponStrength calculated
+    attack compared to monster level
+        if success, monster dies, score +
+            low chance of item found,
+        else health -, attack again (or run away)
+write a chooseMonster() function
+write a runAway() function
+    returns player to prevLocation
+write a pickUpItem() function
+write a addHealth() function
+design display
+    design start page
+        players
+        bios
+        images
+        startbutton
+    design map (5X5) (left column)
+    design textarea (middle)
+    design sidebar (right column)
+        display sdcore
+        display health
+        display monster
+            & bio
+        quit
+        restart
+        (save)
+    design interface (buttons)
+        N,S,E,W
+        runaway
+        attack/pickup
+    design header
+design gameover.php
 
-track score
-add health
-run away
-quit
-die
+schema
