@@ -64,9 +64,9 @@ encounter monster
 
 backlog
 -------
-write a choosePlayer()
-write a startGame()
-write a playerWalk() function
+write a choosePlayer() denette
+write a startGame() dennette
+write a playerWalk() function keith
     randomize low chance of item, high chance of monster
 write a playerTurn() function (or fight)
     monster is chosen randomly by chooseMonster()
@@ -76,8 +76,8 @@ write a playerTurn() function (or fight)
         if success, monster dies, score +
             low chance of item found,
         else health -, attack again (or run away)
-write a chooseMonster() function
-write a runAway() function
+write a chooseMonster() function rick
+write a runAway() function gloria
     returns player to prevLocation
 write a pickUpItem() function
 write a addHealth() function
@@ -105,3 +105,4 @@ design display
 design gameover.php
 
 schema
+simplified db rick

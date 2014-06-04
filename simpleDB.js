@@ -1,17 +1,20 @@
 var characterList = [
+//index 0 = weapon type
 weaponType = [
     "sword", "club"
 ],
-    player = 
-    {
+
+//index 1 = player
+player = {
         name: "Amazon",
         bio: "I'm a hero",
         weapon: weaponType[0],
         health: 100,
         score: 0
-    },
+},
 
-    monster = [
+//index 2 = player
+monster = [
         monsterA = {
             name: "Vampire",
             bio: "I'm a vampire, I hate garlic.",

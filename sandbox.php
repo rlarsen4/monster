@@ -13,12 +13,11 @@
     if ($mysqli->connect_errno) {
         echo "Failed to connect to MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
     }
-
-    $res = $mysqli->query("SELECT * FROM user");
-    echo $res;
 ?>
+    
     <button id="turn">Try</button>
 </body>
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 <script type="text/javascript" src="main.js"></script>
+<script type="text/javascript" src="simpleDB.js"></script>
 </html>
