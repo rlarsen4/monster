@@ -1,0 +1,70 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+	width: 1000px;
+	margin: auto;
+}
+
+header {
+	min-height: 150px;
+	overflow: hidden;
+	position: relative;
+	margin-bottom: 20px;
+	color: #12E316;
+	font-style: bold;
+	font-size: 50px;
+	text-shadow: 0px 3px 0px #1285E3;
+	text-align: center;
+	background-color: #754818;
+}
+
+aside {
+	float: left;
+	width: 250px;
+	margin: 0px 5px;
+	border: 1px;
+	padding: 3px;
+	background-color: #14FA61;
+	font-size: 20px;
+}
+
+li {
+    list-style-position: outside; 
+    margin-left: 30px;
+}
+
+.playerChoices {
+	height: 300px;
+	/*width: 300px;*/
+	background-color: yellow;
+	margin-left: 300px;
+	/*overflow: hidden;*/
+}
+
+.playerImageBox {
+	position: relative;
+	height: 100px;
+	/*width: 100px;*/
+	background-color: lightblue;
+	margin: 20px;
+}
+
+.playerImageBox img {
+	float: left;
+	height: 100px;
+	width: 100px;
+}
+.playerImageBox h3, div {
+	margin-left: 110px;
+}
+
+.selected {
+	background-color: orange;
+
+}
+
+
