@@ -68,3 +68,129 @@ li {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.header h1 {
+	text-align: center;
+	font-size: 3em;
+	color: green;
+}
+.playerStats {
+	padding: none;
+}
+
+fieldset {
+	border-radius: 5px;
+	display: block;
+	width: 200px;
+	padding: none;
+
+}
+
+.tile {
+	width: 50px;
+	height: 50px;
+	background-color: #000;
+	border-radius: 5px;
+	margin: 0;
+	display: inline-block;
+	position: relative;
+}
+
+.row {
+	display: block;
+	margin: 0;
+}
+
+.activeTile {
+	background-color: green;
+}
+
+.visitedTile {
+	background-color: blue;
+}
+
+.goalTile {
+	background-color: yellow;
+}
+
+.stats {
+	padding: none;
+}

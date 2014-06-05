@@ -87,22 +87,26 @@ design display
         bios
         images
         startbutton
-    design map (5X5) (left column)
-    design textarea (middle)
-    design sidebar (right column)
-        display sdcore
-        display health
-        display monster
-            & bio
-        quit
-        restart
-        (save)
-    design interface (buttons)
-        N,S,E,W
-        runaway
-        attack/pickup
-    design header
-design gameover.php
+    design gameplay.php
+        design map (5X5) (left column)
+        design textarea (middle)
+        design sidebar (right column)
+            display sdcore
+            display health
+            display monster
+                & bio
+            quit
+            restart
+            (save)
+        design interface (buttons)
+            N,S,E,W
+            runaway
+            attack/pickup
+        design header
+    design gameover.php
 
-schema
-simplified db rick
+**schema
+**simplified db rick
+SQL tables
+    schema.ods
+    
