@@ -1,6 +1,5 @@
 <?php  ?>
-<link rel="stylesheet" href="styles.css">
-<div class="stats">
+<div class="playerStats">
     <fieldset>
         <legend>Stats</legend>
         <div class="playerType">Player: Amazon</div>

@@ -10,8 +10,8 @@
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
     overflow: hidden;
-    margin-left: 240px;
-    margin-right: 384px;
+
+    width: 50%;
     padding-left: 10px;
     padding-top: 10px;
     padding-right: 10px;
@@ -22,7 +22,7 @@
     background-color: pink;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    width: 400;
+    width: 60%;
     overflow: hidden;
     
 }
@@ -32,7 +32,7 @@
     border-top-left-radius: 20px;
     sborder-top-right-radius: 20px;
     
-    width: 425px;    
+    width: 50%;    
     float: left;
     margin-left: 10px;
     margin-top: 10px;
@@ -42,7 +42,6 @@
 }
 
 #elf {
-    margin-left: 80px;
     margin-top: 30px;
 }
 
@@ -55,7 +54,7 @@
     padding-left: 10px;
     padding-top: 5px;
     padding-left: 10px;
-    
+    text-align: center;
     padding-right: 10px;
     height: 400px;
 
@@ -82,7 +81,7 @@
     padding-top: 5px;
     overflow: hidden;
     float: right;
-    width: 250px;
+    width: 30%;
     
 }
 
@@ -95,12 +94,11 @@
     padding-left: 10px;
     padding-top: 5px;
     height: 400px;
-
+    text-align: center;
 }
 
 #sword {
     margin-top: 30px;
-    margin-left: 70px;
     max-height: 300px;
 }
 .weaponBlank {
@@ -120,11 +118,12 @@
     padding-top: 5px;
     height: 100px;
     overflow: hidden;
-
+    text-align: center;
 }
 
 #jungle {
     max-height: 130px;
+    width: 50%;
 }
 
 .controller {
@@ -135,4 +134,5 @@
     margin-bottom: 10px;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
+    width: 50%;
 }

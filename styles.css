@@ -42,7 +42,7 @@ li {
 	/*width: 300px;*/
 	background-color: yellow;
 	margin-left: 300px;
-	/*overflow: hidden;*/
+	overflow: hidden;
 }
 
 .playerImageBox {
@@ -58,7 +58,7 @@ li {
 	height: 100px;
 	width: 100px;
 }
-.playerImageBox h3, div {
+.playerImageBox h3 {
 	margin-left: 110px;
 }
 
@@ -147,26 +147,46 @@ li {
 
 
 
+header {
+	background-color: purple;
+	height: 100px;
+	font-family: sans-serif;
+}
+
+.map {
+	min-width: 10%;
+	margin: 5px;
+	height: 500px;
+	float: left;
+}
+
+.gamedialog {
+	width: 100%;
+	height: 500px;
+}
+
+.stats { 
+	width: 20%;
+	height: 500px;
+	float: right;
+}
+
 .header h1 {
 	text-align: center;
-	font-size: 3em;
 	color: green;
 }
 .playerStats {
-	padding: none;
+	padding: 0;
 }
 
 fieldset {
 	border-radius: 5px;
-	display: block;
-	width: 200px;
-	padding: none;
-
+	padding: 0;
 }
 
 .tile {
-	width: 50px;
-	height: 50px;
+	width: 30px;
+	height: 30px;
 	background-color: #000;
 	border-radius: 5px;
 	margin: 0;
@@ -192,5 +212,4 @@ fieldset {
 }
 
 .stats {
-	padding: none;
-}
+	padding: 0;
