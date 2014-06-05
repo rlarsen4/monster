@@ -60,15 +60,18 @@ $('#turn').on("click", playerWalk);
 // pickup Item (weapon, other type item) GA
 
 var plyrItemHeld = characterList[1].weapon;
-
 var itemToPU = characterList[0][1];
 
-console.log(plyrItemHeld + itemToPU);
+var puItem = function() {
+    console.log(plyrItemHeld + itemToPU);
 
-if (plyrItemHeld !== itemToPU) {
-    plyrItemHeld = itemToPU;
-    console.log(plyrItemHeld);
+    if (plyrItemHeld !== itemToPU) {
+      plyrItemHeld = itemToPU;
+      console.log(plyrItemHeld);
 
+    }  
 }
+
+puItem();
 
 });
