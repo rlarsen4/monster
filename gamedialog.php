@@ -4,6 +4,8 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="keithStyles.css">
+    <link href="//fonts.googleapis.com/css?family=Press+Start 2P:400" rel="stylesheet" type="text/css">
+
 </head>
 <body>
 
@@ -14,15 +16,8 @@
                     <img src="image/elf.png" id="elf">
                     
                 </div>
-                <div class="monsterDesc"><p>
-                TEXT MONSTER DESCRIPTION KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
-
-
-
-
-
-
-                PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP</p>
+                <div class="monsterDesc"><h1>
+                Elf</h1>
 
 
                 </div>
@@ -40,8 +35,10 @@
             </div>
             
         </div>
+        <div class="gamePlay">
+        </div>
         <div class="scenery">
-            <img src="image/jungle.png" id="jungle">
+            
         </div>
         <div class="controller">TEXT CONTROLLER
             <div class="">
