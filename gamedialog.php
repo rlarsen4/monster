@@ -14,8 +14,16 @@
                     <img src="image/elf.png" id="elf">
                     
                 </div>
-                <div class="monsterDesc">
-                TEXT MONSTER DESCRIPTION
+                <div class="monsterDesc"><p>
+                TEXT MONSTER DESCRIPTION KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
+
+
+
+
+
+
+                PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP</p>
+
 
                 </div>
             </div>
