@@ -43,14 +43,7 @@
             
         </div>
         <div class="controller">TEXT CONTROLLER
-            <div class="">
-
-            </div>
-
-
-            <div class="">
-
-            </div>
+            <?php include "controller.php";?>
         </div>
 
     </div>
