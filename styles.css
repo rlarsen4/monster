@@ -22,7 +22,7 @@ header {
 	background-color: #754818;
 }
 
-aside {
+aside.homePageAside {
 	float: right;
 	width: 350px;
 	margin: 0px 15px;
