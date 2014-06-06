@@ -256,12 +256,15 @@ fieldset {
 	background-color: #777;
 	text-align: center;
 	font-size: 3em;
+
 }
 
 .directional {
 	background-color: #000;
 	width: 165px;
 	display: inline-block;
+	
+
 }
 
 .up {
