@@ -5,7 +5,7 @@
 }
 
 body {
-	width: 1000px;
+	width: 100%;
 	margin: auto;
 }
 
@@ -23,9 +23,9 @@ header {
 }
 
 aside {
-	float: left;
-	width: 250px;
-	margin: 0px 5px;
+	float: right;
+	width: 350px;
+	margin: 0px 15px;
 	border: 1px;
 	padding: 3px;
 	background-color: #14FA61;
@@ -38,31 +38,53 @@ li {
 }
 
 .playerChoices {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 9e7f33be42ddbf8cd5f7327f94607f7567a33d2f
 	background-color: #EDEDED;
 	margin: 0 300px 15px 15px;
 	overflow: hidden;
+	
+=======
+	
+>>>>>>> eb5fe4cc494307ca0800462750c3634c8764537f
 }
 
 .playerImageBox {
-	position: relative;
-	height: 100px;
-	/*width: 100px;*/
-	background-color: lightblue;
+	/*position: relative;*/
+	/*float: left;*/
+	display: inline-block;
 	margin: 20px;
+	background-color: #B2B2B2;	
+	height: 150px;
+	width: 150px;
+	opacity: 0.8; 
+}
+
+.playerImageBox:hover {
+	box-shadow: 0 0 10px #ccc;
+	opacity: 1;
+
+}
+
+.playerImageBox.selected {
+	background-color: orange;
+	transition: 2s;
+
 }
 
 .playerImageBox img {
 	float: left;
-	height: 100px;
+	height: 150px;
 	width: 100px;
 }
 .playerImageBox h3 {
 	margin-left: 110px;
 }
 
-.selected {
-	background-color: orange;
-
+.startButton {
+	display: none;
 }
 
 
@@ -142,9 +164,9 @@ li {
 
 
 
+<<<<<<< HEAD
 
-
-
+=======
 header {
 	background-color: purple;
 	height: 100px;
@@ -168,6 +190,7 @@ header {
 	height: 500px;
 	float: right;
 }
+>>>>>>> eb5fe4cc494307ca0800462750c3634c8764537f
 
 .header h1 {
 	text-align: center;
@@ -180,6 +203,10 @@ header {
 fieldset {
 	border-radius: 5px;
 	padding: 0;
+<<<<<<< HEAD
+
+=======
+>>>>>>> eb5fe4cc494307ca0800462750c3634c8764537f
 }
 
 .tile {
