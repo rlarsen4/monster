@@ -4,7 +4,10 @@ var choosePlayer = function(){
 	// change background around the player that was chosen - css()
 	$('.selected').removeClass('selected');
 	$(this).parent().addClass('selected');
+	// Start button appears
 	$('.startButton').show();
+	// Clicked on player's bio appears in the Aside under the Directions
+	$('.bioAside').show();
 };
 
 var startGame = function(){

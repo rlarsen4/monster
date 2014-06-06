@@ -27,9 +27,9 @@ li {
     margin-left: 30px;
 }
 
-.playerChoices {
-	/*float: left;*/
+.playerChoices fieldset {
 	background-color: #EDEDED;
+	padding: 10px;
 	margin: 0 300px 15px 15px;
 	overflow: hidden;
 }
@@ -66,7 +66,7 @@ li {
 	display: none;
 }
 
-aside.homePageAside {
+.homePageAside {
 	float: right;
 	width: 400px;
 	height: 600px;
@@ -75,6 +75,15 @@ aside.homePageAside {
 	padding: 3px;
 	background-color: #14FA61;
 	font-size: 20px;
+}
+
+.homePageAside fieldset {
+	padding: 10px;
+	margin: 10px;
+}
+
+.bioAside {
+	display: none;
 }
 
 

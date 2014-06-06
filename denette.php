@@ -14,29 +14,33 @@
 	</header>
 	
 	<aside class="homePageAside">
-		<div class="gameRulesAside">
-			<h3>Quick Start Rules</h3>
-			<ol>
-				<li>Choose a player you want to be</li>
-				<li>Click the Start button</li>
-				<li>The Game board opens for you</li>
-				<li>Use the Up/ Down/ Side arrows to move around the board</li>
-				<li>Fight monsters, get rewards, get points and figure it out. That's all the information you get.</li>
-			</ol>
-		</div>
+			<div class="gameRulesAside">
+				<fieldset>
+					<legend>Quick Start Rules</legend>
+						<ol>
+							<li>Choose a player you want to be</li>
+							<li>Click the Start button</li>
+							<li>The Game board opens for you</li>
+							<li>Use the Up/ Down/ Side arrows to move around the board</li>
+							<li>Fight monsters, get rewards, get points and figure it out. That's all the information you get.</li>
+						</ol>
+				</fieldset>
+			</div>
 
-		<div class="bio">
-			<h3>Bio</h3>
-			<div>Name: Warrior</div>
-			<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, quidem?</div>
-			<div>Weapon: sword</div>
-			<div>Strength: 6</div>
-		</div>
+			<div class="bioAside">
+				<fieldset>
+					<legend>Player Bio</legend>
+						<div>Name: Warrior</div>
+						<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, quidem?</div>
+						<div>Weapon: sword</div>
+						<div>Strength: 6</div>
+				</fieldset>
+			</div>
 	</aside>
 
 	<div class="playerChoices">
 		<fieldset>
-			<legend>Who Do You Want to Be</legend>
+			<legend>Pick Your Player</legend>
 
 			<div>
 				<div id="amazon" class="playerImageBox">
@@ -72,7 +76,7 @@
 
 			<button class="startButton">Start the Game</button>
 
-	</fieldset>
+		</fieldset>
 	</div>
 	
 </body>
