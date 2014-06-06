@@ -176,7 +176,6 @@ header {
 .map {
 	min-width: 10%;
 	margin: 5px;
-	height: 500px;
 	float: left;
 }
 
@@ -202,7 +201,7 @@ header {
 
 fieldset {
 	border-radius: 5px;
-	padding: 0;
+	padding: 10;
 <<<<<<< HEAD
 
 =======
