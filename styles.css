@@ -5,7 +5,7 @@
 }
 
 body {
-	width: 1000px;
+	width: 100%;
 	margin: auto;
 }
 
@@ -23,9 +23,9 @@ header {
 }
 
 aside {
-	float: left;
-	width: 250px;
-	margin: 0px 5px;
+	float: right;
+	width: 350px;
+	margin: 0px 15px;
 	border: 1px;
 	padding: 3px;
 	background-color: #14FA61;
@@ -38,34 +38,50 @@ li {
 }
 
 .playerChoices {
-	height: 300px;
-	/*width: 300px;*/
-	background-color: yellow;
-	margin-left: 300px;
-	/*overflow: hidden;*/
+	background-color: #EDEDED;
+	margin: 0 300px 15px 15px;
+	padding: 0 15px 15px 15px;
+	overflow: hidden;
+	
 }
 
 .playerImageBox {
-	position: relative;
-	height: 100px;
-	/*width: 100px;*/
-	background-color: lightblue;
+	/*position: relative;*/
+	/*float: left;*/
+	display: inline-block;
 	margin: 20px;
+	background-color: #B2B2B2;	
+	height: 150px;
+	width: 150px;
+	opacity: 0.8; 
+}
+
+.playerImageBox:hover {
+	box-shadow: 0 0 10px #ccc;
+	opacity: 1;
+
+}
+
+.playerImageBox.selected {
+	background-color: orange;
+	transition: 2s;
+
 }
 
 .playerImageBox img {
 	float: left;
-	height: 100px;
+	height: 150px;
 	width: 100px;
 }
 .playerImageBox h3, div {
 	margin-left: 110px;
 }
 
-.selected {
-	background-color: orange;
-
+.startButton {
+	display: none;
 }
+
+
 
 
 
@@ -158,9 +174,7 @@ li {
 
 fieldset {
 	border-radius: 5px;
-	display: block;
-	width: 200px;
-	padding: none;
+	padding: 0;
 
 }
 
