@@ -10,32 +10,29 @@
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
     overflow: hidden;
-
-    width: 500px;
+    width: 800px;
     padding-left: 10px;
     padding-top: 10px;
     padding-right: 10px;
+    margin-left: 20px;
 }
 
 .dialog {
     background-color: pink;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    width: 500px;
+    width: 800px;
     overflow: hidden;
 }
 
 .monsterContainer {
     background-color: grey;
     border-top-left-radius: 20px;
-    sborder-top-right-radius: 20px;    
-    width: 250px;    
+    border-top-right-radius: 20px;    
+    width: 300px;    
     float: left;
-    margin-left: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding-left: 10px;
-    padding-top: 5px;
+    padding: 5px;
+    margin: 10px;
     overflow: hidden;
 }
 
@@ -43,14 +40,13 @@
     background-color: yellow;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    margin-right: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
     margin-top: 5px;
     padding-left: 10px;
     text-align: center;
     padding-right: 10px;
-    height: 140px;
-
-   
+    height: 140px;   
 }
 
 #elf {
@@ -62,27 +58,20 @@
 
 .monsterDesc {
     background-color: red;
-    margin-right: 10px;
-    padding-left: 10px;
-    padding-top: 5px;
-    margin-bottom: 10px;
+    padding: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
     overflow: hidden;
-}
-
-.monsterDesc p {
-    font-style: georgia;
     text-align: center;
 }
 
 .weaponContainer {
     background-color: blue;
-    sborder-top-left-radius: 20px;
+    border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    margin-right: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding-left: 10px;
-    padding-top: 5px;
+    padding: 5px;
+    margin: 10px;
     overflow: hidden;
     float: right;
     width: 200px;
@@ -93,7 +82,8 @@
     background-color: green;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    margin-right: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
     margin-top: 5px;
     padding-left: 10px;
     padding-top: 5px;
@@ -105,23 +95,22 @@
     margin-top: 10px;
     max-height: 100px;
 }
-.weaponBlank {
+
+.weaponName {
     background-color: darkgrey;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    padding-left: 10px;
-    padding-top: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
     height: 30px;
     text-align: center;
-
-
 }
 
 .gamePlay {
     background-color: black;
     height: 200px;
-
-
+    font-family: 'Press Start 2P', cursive;
+    color: lime;
 }
 
 .scenery {
@@ -131,7 +120,7 @@
     text-align: center;
     background-image: url("image/jungle.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 100%;
 }
 
 /*#jungle {
