@@ -12,7 +12,7 @@ var choosePlayer = function(){
 
 var startGame = function(){
 	// Link to and open the gameplay.php
-	window.open('/gameplay.php');
+	window.open('gameplay.php');
 	};
 
 
