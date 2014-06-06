@@ -39,6 +39,9 @@ li {
 
 .playerChoices {
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 9e7f33be42ddbf8cd5f7327f94607f7567a33d2f
 	background-color: #EDEDED;
 	margin: 0 300px 15px 15px;
 	overflow: hidden;
@@ -161,9 +164,6 @@ li {
 
 
 
-
-
-
 <<<<<<< HEAD
 
 =======
@@ -181,7 +181,7 @@ header {
 }
 
 .gamedialog {
-	width: 100%;
+	min-width: 100px;
 	height: 500px;
 }
 

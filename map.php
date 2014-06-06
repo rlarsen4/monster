@@ -37,3 +37,8 @@
         <div class="tile goalTile" id="25"></div>
     </div>  
 </div>
+<div class="legend">
+    <div>
+        <div class="tile activetile"></div>
+    </div>
+</div>
