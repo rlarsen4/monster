@@ -12,6 +12,7 @@
 	<header>
 		<?php include "header.php";?>
 	</header>
+	
 	<aside class="homePageAside">
 		<div class="gameRulesAside">
 			<h3>Quick Start Rules</h3>
@@ -26,52 +27,53 @@
 
 		<div class="bio">
 			<h3>Bio</h3>
+			<div>Name: Warrior</div>
 			<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, quidem?</div>
-			<div>Weapon</div>
-			<div>Strength</div>
+			<div>Weapon: sword</div>
+			<div>Strength: 6</div>
 		</div>
 	</aside>
-	
+
 	<div class="playerChoices">
 		<fieldset>
-		<legend>Who Do You Want to Be</legend>
+			<legend>Who Do You Want to Be</legend>
 
-		<div>
-			
-			<div id="amazon" class="playerImageBox">
-				<img src="barbarian-152853_150.png" alt="">
-				<button class="player">Choose Amazon</button>
+			<div>
+				<div id="amazon" class="playerImageBox">
+					<img src="barbarian-152853_150.png" alt="">
+					<button class="player">Choose Amazon</button>
+				</div>
+
+				<div id="elf" class="playerImageBox">
+					<img src="archer-160389_150.png" alt="">
+					<button class="player">Choose Elf</button>
+				</div>
+
+				<div class="playerImageBox">
+					<img src="barbarian-152853_150.png" alt="">
+					<button class="player">Choose Human</button>
+				</div>
 			</div>
 
-			<div id="elf" class="playerImageBox">
-				<img src="archer-160389_150.png" alt="">
-				<button class="player">Choose Elf</button>
+			<div>
+				<div class="playerImageBox">
+					<img src="barbarian-152853_150.png" alt="">
+					<button class="player">Choose Elf</button>
+				</div>
+				<div class="playerImageBox">
+					<img src="barbarian-152853_150.png" alt="">
+					<button class="player">Choose Elf</button>
+				</div>
+				<div class="playerImageBox">
+					<img src="barbarian-152853_150.png" alt="">
+					<button class="player">Choose Elf</button>
+				</div>
 			</div>
 
-			<div class="playerImageBox">
-				<button class="player">Choose Elf</button>
-			</div>
-		</div>
-
-
-		<div>
-			<div class="playerImageBox">
-				<button class="player">Choose Elf</button>
-			</div>
-			<div class="playerImageBox">
-				<button class="player">Choose Elf</button>
-			</div>
-			<div class="playerImageBox">
-				<button class="player">Choose Elf</button>
-			</div>
-		</div>
-
-		<button class="startButton">Start the Game</button>
+			<button class="startButton">Start the Game</button>
 
 	</fieldset>
 	</div>
-
-	<!-- <button disabled="disabled" id="startButton">Start Game</button> -->
 	
 </body>
 </html>

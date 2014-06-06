@@ -22,42 +22,23 @@ header {
 	background-color: #754818;
 }
 
-aside.homePageAside {
-	float: right;
-	width: 350px;
-	margin: 0px 15px;
-	border: 1px;
-	padding: 3px;
-	background-color: #14FA61;
-	font-size: 20px;
-}
-
 li {
     list-style-position: outside; 
     margin-left: 30px;
 }
 
 .playerChoices {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 9e7f33be42ddbf8cd5f7327f94607f7567a33d2f
+	/*float: left;*/
 	background-color: #EDEDED;
 	margin: 0 300px 15px 15px;
 	overflow: hidden;
-	
-=======
-	
->>>>>>> eb5fe4cc494307ca0800462750c3634c8764537f
 }
 
 .playerImageBox {
-	/*position: relative;*/
-	/*float: left;*/
 	display: inline-block;
 	margin: 20px;
 	background-color: #B2B2B2;	
-	height: 150px;
+	height: 175px;
 	width: 150px;
 	opacity: 0.8; 
 }
@@ -65,13 +46,11 @@ li {
 .playerImageBox:hover {
 	box-shadow: 0 0 10px #ccc;
 	opacity: 1;
-
 }
 
 .playerImageBox.selected {
 	background-color: orange;
 	transition: 2s;
-
 }
 
 .playerImageBox img {
@@ -87,6 +66,16 @@ li {
 	display: none;
 }
 
+aside.homePageAside {
+	float: right;
+	width: 400px;
+	height: 600px;
+	margin: 0px 20px;
+	border: 1px;
+	padding: 3px;
+	background-color: #14FA61;
+	font-size: 20px;
+}
 
 
 
