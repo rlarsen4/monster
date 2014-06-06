@@ -42,8 +42,7 @@
         <div class="scenery">
             
         </div>
-        <div class="controller">TEXT CONTROLLER
-            <?php include "controller.php";?>
+        <div class="controlBlock"><?php include "controller.php";?>
         </div>
 
     </div>
