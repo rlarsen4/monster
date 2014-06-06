@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="keithStyles.css">
-    <link href="//fonts.googleapis.com/css?family=Press+Start 2P:400" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
 
 </head>
 <body>
@@ -27,7 +27,8 @@
                     <img src="image/sword.png" id="sword">
                     
                 </div>
-                <div class="weaponBlank">TEXT WEAPON BLANK
+                <div class="weaponName"><h2>
+                Monster Weapon</h2>
 
 
                 </div>
@@ -36,6 +37,7 @@
             
         </div>
         <div class="gamePlay">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, consectetur, tempore, quisquam illo fugiat consequatur dolore cum dignissimos eveniet laboriosam molestias voluptatem laborum aperiam neque minima. Optio repellendus enim in!
         </div>
         <div class="scenery">
             
