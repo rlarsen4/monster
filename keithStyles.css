@@ -11,7 +11,7 @@
     border-bottom-left-radius: 20px;
     overflow: hidden;
 
-    width: 50%;
+    width: 500px;
     padding-left: 10px;
     padding-top: 10px;
     padding-right: 10px;
@@ -22,7 +22,7 @@
     background-color: pink;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    width: 60%;
+    width: 500px;
     overflow: hidden;
     
 }
@@ -30,8 +30,7 @@
 .monsterContainer {
     background-color: grey;
     border-top-left-radius: 20px;
-    sborder-top-right-radius: 20px;
-    
+    sborder-top-right-radius: 20px;    
     width: 50%;    
     float: left;
     margin-left: 10px;
@@ -39,10 +38,7 @@
     margin-bottom: 10px;
     padding-left: 10px;
     padding-top: 5px;
-}
-
-#elf {
-    margin-top: 30px;
+    overflow: hidden;
 }
 
 .monsterImg {
@@ -52,13 +48,18 @@
     margin-right: 10px;
     margin-top: 5px;
     padding-left: 10px;
-    padding-top: 5px;
-    padding-left: 10px;
     text-align: center;
     padding-right: 10px;
-    height: 400px;
+    height: 140px;
 
+   
+}
 
+#elf {
+    margin-top: 10px;
+    height: 100px;
+    width: 80px;
+    text-align: center;
 }
 
 .monsterDesc {
@@ -68,6 +69,11 @@
     padding-top: 5px;
     margin-bottom: 10px;
     overflow: hidden;
+}
+
+.monsterDesc p {
+    font-style: georgia;
+    text-align: center;
 }
 
 .weaponContainer {
@@ -99,7 +105,7 @@
 
 #sword {
     margin-top: 30px;
-    max-height: 300px;
+    max-height: 100%;
 }
 .weaponBlank {
     background-color: darkgrey;
@@ -123,7 +129,7 @@
 
 #jungle {
     max-height: 130px;
-    width: 50%;
+    
 }
 
 .controller {
@@ -134,5 +140,6 @@
     margin-bottom: 10px;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
-    width: 50%;
+
+    
 }
