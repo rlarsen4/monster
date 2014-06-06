@@ -1,0 +1,47 @@
+//Initial commit GA
+
+/*
+This is output of running admin.php in your browser.
+It does functional testing of the class DB, by operating on a table called Weapons.
+The initial state of the Weapons table is to contain 1 record,
+with the following fields:
+weapon_ID => 13, weapon_name => club, weapon_str => 3
+admin.php:
+1. dumps the initial state of the table, then it does "CRUD"...
+2. Creates a new record(aka row), with a weapon name of sword.
+3. Retrieves 1 record with the weapon name of sword (For testing purposes:
+	also saves the weapon_ID in a variable called $sword_id.
+	This is necessary in order to do the next testing step... Update the record).
+4. Update the record: Update with weapon_ID = $sword_id, changing the weapon name
+	to an axe, & its weapon_str to 4.
+5. Delete the record: deletes the weapon record where the weapon_name is 'axe'.
+*/
+
+SAMPLE OUTPUT:
+
+Connected to localhost
+Dumping weapons table: 
+weapon_ID => 13, weapon_name => club, weapon_str => 3
+
+Create a new record: 
+INSERT INTO `weapons` (`weapon_name`, `weapon_str`) VALUES ('sword', '3')
+Dumping weapons table: 
+weapon_ID => 13, weapon_name => club, weapon_str => 3
+weapon_ID => 22, weapon_name => sword, weapon_str => 3
+
+Retrieve a record: 
+SELECT * FROM `weapons` WHERE (`weapon_name`) = ('sword')
+weapon_ID => 22, weapon_name => sword, weapon_str => 3
+
+Update a record: 
+REPLACE INTO `weapons` (`weapon_ID`, `weapon_name`, `weapon_str`) VALUES ('22', 'axe', '4')
+Dumping weapons table: 
+weapon_ID => 13, weapon_name => club, weapon_str => 3
+weapon_ID => 22, weapon_name => axe, weapon_str => 4
+
+Delete a record: 
+DELETE FROM `weapons` WHERE (`weapon_name`) = ('axe')
+Dumping weapons table: 
+weapon_ID => 13, weapon_name => club, weapon_str => 3
+
+

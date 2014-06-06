@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!doctype html>
 <html lang="en">
 <head>
@@ -18,3 +19,15 @@ load stats on the left
 
 when click start after choosing their player, then this php loads and 
 calls in the other php files to populate the page -->
+=======
+<link rel="stylesheet" href="styles.css">
+<header> <?php include 'header.php'; ?></header>
+<div>
+<div class="map"><?php include 'map.php' ?> </div>
+<div class="gamedialog"><?php include 'gamedialog.php' ?> 
+<div class="stats"><?php include 'stats.php' ?> </div>
+</div>
+</div> 
+
+
+>>>>>>> eb5fe4cc494307ca0800462750c3634c8764537f
