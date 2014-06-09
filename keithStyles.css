@@ -4,7 +4,7 @@
 }
 .main {
 
-    background-color: maroon;
+    background-color: grey;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -19,14 +19,14 @@
 }
 
 .dialog {
-    background-color: pink;
+    background-color: lime;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     overflow: hidden;
 }
 
 .monsterContainer {
-    background-color: grey;
+    background-color: #000;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;    
     width: 300px;    
@@ -38,7 +38,7 @@
 }
 
 .monsterImg {
-    background-color: yellow;
+    /*background-color: yellow;*/
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     margin-right: 5px;
@@ -58,7 +58,7 @@
 }
 
 .monsterDesc {
-    background-color: red;
+    background-color: grey;
     padding: 5px;
     margin-right: 5px;
     margin-left: 5px;
@@ -68,20 +68,20 @@
 }
 
 .weaponContainer {
-    background-color: blue;
+    background-color: #000;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     padding: 5px;
     margin: 10px;
     overflow: hidden;
     float: right;
-    width: 200px;
+    width: 300px;
     height: 220px;
     
 }
 
 .weaponImg {
-    background-color: green;
+    /*background-color: green;*/
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     margin-right: 5px;
@@ -99,7 +99,7 @@
 }
 
 .weaponName {
-    background-color: red;
+    background-color: grey;
     padding: 5px;
     margin-right: 5px;
     margin-left: 5px;
@@ -114,6 +114,7 @@
     font-family: 'Press Start 2P', cursive;
     font-size: 10pt;
     color: lime;
+    padding: 5px;
 }
 
 .scenery {
