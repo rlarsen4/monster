@@ -7,20 +7,26 @@ var Dice = function(sides) {
 };
 
 var MapObject = function() {
-    var currLocation = 1;
-    var prevLocation = 1;
+    var currLocation = 23;
+    var prevLocation = 2;
 
-    this.getLocation = currLocation;
+    this.getLocation = function(){
+        var currLocationId = "#" + currLocation;
+        var prevLocationId = "#" + prevLocation;
+        $(currLocationId).addClass('activeTile');
+        $(currLocationId).removeClass('visitedTile');
+        $(prevLocationId).addClass('visitedTile');
+    }
 
     this.walkUp = function() {
+        
         if (currLocation <= 5) {
             currLocation = currLocation;
         } else {
             prevLocation = currLocation;
             currLocation -= 5;
-            $('#6').addClass('.activeTile')
-            $('#6').css(background-color, "purple");
         }
+        
     }
 
     this.walkDown = function() {
@@ -29,11 +35,43 @@ var MapObject = function() {
         } else {
             prevLocation = currLocation;
             currLocation += 5;
-            $('').addClass('activeTile');
-            
         }
     }
+
+    this.walkLeft = function() {
+        if (currLocation == (1 || 6 || 11 || 16 || 21) ) {
+            currLocation = currLocation;
+        } else {
+            prevLocation = currLocation;
+            currLocation -= 1;
+        }
+    }
+
+    this.walkRight = function() {
+        if (currLocation == (5 || 10 || 15 || 20 || 25)) {
+            currLocation = currLocation;
+        } else {
+            prevLocation = currLocation;
+            currLocation += 1;
+        }
+    }
+    this.runAway = function  () {
+        currLocation = prevLocation;
+    }
+
+    this.buttonClick = function () {
+        console.log("button got pushed");
+        this.addClass('clicked');
+    }
 };
+
+var Monster = function() {
+    var name = "Vampire";
+}
+
+var Potion = function() {
+    var name = "Blueberry flavored";
+}
 
 /*
 (function(){

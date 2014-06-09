@@ -1,11 +1,36 @@
 $(function() {
 
-var monsterOrPotion = new Dice(5);
+var monsterOrPotion = function () {
+    var checkForMonsters = new Dice(5);
+    if (checkForMonsters.getRoll() == 1) {
+        aPotion = new Potion();
+        $('.gamePlay').text("");
+        $('.gamePlay').text("Yummy potion");
+    } else {
+        aMonster = new Monster();
+        $('.gamePlay').text("");
+        $('.gamePlay').text("Scary monster");
+    }
+}
 
 var mapWalk = new MapObject;
 
-mapWalk.walkDown();
 
+mapWalk.getLocation();
+$('.up').on('click', mapWalk.walkUp);
+$('.up').on('click', mapWalk.getLocation);
+$('.up').on('click', monsterOrPotion);
+$('.down').on('click', mapWalk.walkDown);
+$('.down').on('click', mapWalk.getLocation);
+$('.down').on('click', monsterOrPotion);
+$('.left').on('click', mapWalk.walkLeft);
+$('.left').on('click', mapWalk.getLocation);
+$('.left').on('click', monsterOrPotion);
+$('.right').on('click', mapWalk.walkRight);
+$('.right').on('click', mapWalk.getLocation);
+$('.right').on('click', monsterOrPotion);
+$('.runAway').on('click', mapWalk.runAway);
+$('.runAway').on('click', mapWalk.getLocation);
 // var playerScore = 0;
 // var playerHealth = 100;
 // var enemyStrength = 7;

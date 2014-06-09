@@ -37,7 +37,7 @@
             
         </div>
         <div class="gamePlay">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, consectetur, tempore, quisquam illo fugiat consequatur dolore cum dignissimos eveniet laboriosam molestias voluptatem laborum aperiam neque minima. Optio repellendus enim in!
+            
         </div>
         <div class="scenery">
             
@@ -47,7 +47,10 @@
 
     </div>
 
-
+<script type="text/javascript" src="simpleDB.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="main2.js"></script>
+<script type="text/javascript" src="main.js"></script>
 </body>
 </html>
 
