@@ -3,22 +3,22 @@
     <fieldset>
     <legend>MAP</legend>
         <div class="row">
-            <div class="tile visitedTile" id="1"></div>
-            <div class="tile visitedTile" id="2"></div>
+            <div class="tile" id="1"></div>
+            <div class="tile" id="2"></div>
             <div class="tile" id="3"></div>
             <div class="tile" id="4"></div>
             <div class="tile" id="5"></div>
         </div>
         <div class="row">
             <div class="tile" id="6"></div>
-            <div class="tile visitedTile" id="7"></div>
+            <div class="tile" id="7"></div>
             <div class="tile" id="8"></div>
             <div class="tile" id="9"></div>
             <div class="tile" id="10"></div>
         </div>
         <div class="row">
             <div class="tile" id="11"></div>
-            <div class="tile activeTile" id="12"></div>
+            <div class="tile" id="12"></div>
             <div class="tile" id="13"></div>
             <div class="tile" id="14"></div>
             <div class="tile" id="15"></div>
