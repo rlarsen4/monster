@@ -24,7 +24,7 @@
             </div>
             <div class="weaponContainer">
                 <div class="weaponImg">
-                    <img src="image/sword.png" id="sword">
+                    <img src="image/bowAndArrow.png" id="sword">
                     
                 </div>
                 <div class="weaponName"><h2>
