@@ -287,6 +287,15 @@ fieldset {
 	border-bottom-right-radius: 5px;
 }
 
+.up, .left, .right, .down, .center, .attack, .runAway {
+	border-right: 2px solid #ccc;
+	border-bottom: 2px solid #ccc;
+}
+
+.directional .clicked {
+	border-top: 2px solid #ccc;
+	border-left: 2px solid #ccc;
+}
 .attack, .runAway {
 	background-color: #777;
 	display: inline-block;

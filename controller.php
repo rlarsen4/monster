@@ -10,7 +10,7 @@
         </div>
         <div class="row">
             <div class="dpad left"><i class="fa fa-arrow-circle-o-left"></i></div>
-            <div class="dpad"><i class="fa fa-dot-circle-o"></i></div>
+            <div class="dpad center"><i class="fa fa-dot-circle-o"></i></div>
             <div class="dpad right"><i class="fa fa-arrow-circle-o-right"></i></div>
         </div>
         <div class="row">
