@@ -34,6 +34,7 @@
     padding: 5px;
     margin: 10px;
     overflow: hidden;
+    height: 220px;
 }
 
 .monsterImg {
@@ -51,7 +52,7 @@
 
 #elf {
     margin-top: 10px;
-    height: 100px;
+    height: 120px;
     width: 80px;
     
 }
@@ -75,6 +76,7 @@
     overflow: hidden;
     float: right;
     width: 200px;
+    height: 220px;
     
 }
 
@@ -108,8 +110,9 @@
 
 .gamePlay {
     background-color: black;
-    height: 200px;
+    height: 100px;
     font-family: 'Press Start 2P', cursive;
+    font-size: 10pt;
     color: lime;
 }
 
