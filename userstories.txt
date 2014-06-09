@@ -82,13 +82,13 @@ write a runAway() function gloria
 write a pickUpItem() function gloria
 write a addHealth() function
 design display
-    design start page
-        players
+**    design start page
+**      players
         bios
         images
         startbutton
     design gameplay.php
-        design map (5X5) (left column)
+    **  design map (5X5) (left column)
         design textarea (middle)
         design sidebar (right column)
             display sdcore
@@ -99,9 +99,9 @@ design display
             restart
             (save)
         design interface (buttons)
-            N,S,E,W
-            runaway
-            attack/pickup
+    **      N,S,E,W
+    **      runaway
+    **      attack/pickup
         design header
     design gameover.php
 
@@ -109,4 +109,5 @@ design display
 **simplified db rick
 SQL tables
     schema.ods
+
     
