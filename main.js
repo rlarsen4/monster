@@ -4,33 +4,69 @@ var monsterOrPotion = function () {
     var checkForMonsters = new Dice(5);
     if (checkForMonsters.getRoll() == 1) {
         aPotion = new Potion();
-        $('.gamePlay').text("");
-        $('.gamePlay').text("Yummy potion");
+        // $('.gamePlay').text("");
+        // $('.gamePlay').text("Yummy potion");
     } else {
         aMonster = new Monster();
-        $('.gamePlay').text("");
-        $('.gamePlay').text("Scary monster");
+        // $('.gamePlay').text("");
+        // $('.gamePlay').text("Scary monster");
     }
 }
 
 var mapWalk = new MapObject;
 
+var moveUp = function() {
+    mapWalk.walkUp();
+    mapWalk.getLocation();
+    monsterOrPotion();
+}
 
+var moveDown = function () {
+    mapWalk.walkDown();
+    mapWalk.getLocation();
+    monsterOrPotion();
+}
+
+var moveLeft = function () {
+    mapWalk.walkLeft();
+    mapWalk.getLocation();
+    monsterOrPotion();
+}
+
+var moveRight = function () {
+    mapWalk.walkRight();
+    mapWalk.getLocation();
+    monsterOrPotion();
+}
+
+var keyGotPusheded = function  (e) {
+    if (e.keyCode == 37) {
+        moveLeft();
+        return false;
+    } else if (e.keyCode == 39) {
+        moveRight();
+        return false;
+    } else if (e.keyCode == 38) {
+        moveUp();
+        return false;
+    } else if (e.keyCode == 40) {
+        moveDown();
+        return false;
+    }
+    // body...
+}
+//event listeners
 mapWalk.getLocation();
-$('.up').on('click', mapWalk.walkUp);
-$('.up').on('click', mapWalk.getLocation);
-$('.up').on('click', monsterOrPotion);
-$('.down').on('click', mapWalk.walkDown);
-$('.down').on('click', mapWalk.getLocation);
-$('.down').on('click', monsterOrPotion);
-$('.left').on('click', mapWalk.walkLeft);
-$('.left').on('click', mapWalk.getLocation);
-$('.left').on('click', monsterOrPotion);
-$('.right').on('click', mapWalk.walkRight);
-$('.right').on('click', mapWalk.getLocation);
-$('.right').on('click', monsterOrPotion);
+$('.up').on('click', moveUp);
+$('.down').on('click',moveDown) ;
+$('.left').on('click', moveLeft);
+$('.right').on('click', moveRight);
 $('.runAway').on('click', mapWalk.runAway);
 $('.runAway').on('click', mapWalk.getLocation);
+$(document).keydown(keyGotPusheded);
+
+
+
 // var playerScore = 0;
 // var playerHealth = 100;
 // var enemyStrength = 7;

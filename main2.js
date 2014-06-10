@@ -7,15 +7,17 @@ var Dice = function(sides) {
 };
 
 var MapObject = function() {
-    var currLocation = 23;
-    var prevLocation = 2;
+    var currLocation = 1;
+    var prevLocation = 1;
 
     this.getLocation = function(){
         var currLocationId = "#" + currLocation;
         var prevLocationId = "#" + prevLocation;
         $(currLocationId).addClass('activeTile');
         $(currLocationId).removeClass('visitedTile');
+        $(currLocationId).removeClass('goalTile');
         $(prevLocationId).addClass('visitedTile');
+        $('.gamePlay').text("to: " + currLocation + " from: " + prevLocation);
     }
 
     this.walkUp = function() {
@@ -26,6 +28,7 @@ var MapObject = function() {
             prevLocation = currLocation;
             currLocation -= 5;
         }
+
         
     }
 
@@ -39,7 +42,15 @@ var MapObject = function() {
     }
 
     this.walkLeft = function() {
-        if (currLocation == (1 || 6 || 11 || 16 || 21) ) {
+        if (currLocation == 1) {
+            currLocation = currLocation;
+        } else if (currLocation == 6) {
+            currLocation = currLocation;
+        } else if (currLocation == 11) {
+            currLocation = currLocation;
+        } else if (currLocation == 16) {
+            currLocation = currLocation;
+        } else if (currLocation == 21) {
             currLocation = currLocation;
         } else {
             prevLocation = currLocation;
@@ -48,7 +59,15 @@ var MapObject = function() {
     }
 
     this.walkRight = function() {
-        if (currLocation == (5 || 10 || 15 || 20 || 25)) {
+        if (currLocation == 5){
+            currLocation = currLocation;
+        } else if (currLocation == 10) {
+            currLocation = currLocation;
+        } else if (currLocation == 15) {
+            currLocation = currLocation;
+        } else if (currLocation == 20) {
+            currLocation = currLocation;
+        } else if (currLocation == 25) {
             currLocation = currLocation;
         } else {
             prevLocation = currLocation;
@@ -66,7 +85,7 @@ var MapObject = function() {
 };
 
 var Monster = function() {
-    var name = "Vampire";
+    var name = characterList[2];
 }
 
 var Potion = function() {

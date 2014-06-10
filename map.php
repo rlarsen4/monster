@@ -43,7 +43,7 @@
     <fieldset>
         <legend>LEGEND</legend>
     <div>
-        <div class="tile activetile"></div>
+        <div class="tile activeTile"></div>
         *YOU ARE HERE.
     </div>
     <div>
