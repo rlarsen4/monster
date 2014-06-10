@@ -1,5 +1,5 @@
 var Dice = function(sides) {
-    var roll = Math.floor((Math.random() * sides) + 1);
+    var roll = Math.floor((Math.random() * sides));
 
     this.getRoll = function() {
         return roll;
@@ -17,7 +17,6 @@ var MapObject = function() {
         $(currLocationId).removeClass('visitedTile');
         $(currLocationId).removeClass('goalTile');
         $(prevLocationId).addClass('visitedTile');
-        $('.gamePlay').text("to: " + currLocation + " from: " + prevLocation);
     }
 
     this.walkUp = function() {
@@ -83,10 +82,6 @@ var MapObject = function() {
         this.addClass('clicked');
     }
 };
-
-var Monster = function() {
-    var name = characterList[2];
-}
 
 var Potion = function() {
     var name = "Blueberry flavored";

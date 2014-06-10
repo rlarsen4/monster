@@ -1,13 +1,15 @@
 $(function() {
 
-var monsterOrPotion = function () {
+var monsterOrWeapon = function () {
     var checkForMonsters = new Dice(5);
     if (checkForMonsters.getRoll() == 1) {
-        aPotion = new Potion();
+        aWeapon = new Weapon();
         // $('.gamePlay').text("");
         // $('.gamePlay').text("Yummy potion");
     } else {
         aMonster = new Monster();
+        aMonster.selectAMonster();
+        console.log(aMonster.currentMonster);
         // $('.gamePlay').text("");
         // $('.gamePlay').text("Scary monster");
     }
@@ -18,25 +20,25 @@ var mapWalk = new MapObject;
 var moveUp = function() {
     mapWalk.walkUp();
     mapWalk.getLocation();
-    monsterOrPotion();
+    monsterOrWeapon();
 }
 
 var moveDown = function () {
     mapWalk.walkDown();
     mapWalk.getLocation();
-    monsterOrPotion();
+    monsterOrWeapon();
 }
 
 var moveLeft = function () {
     mapWalk.walkLeft();
     mapWalk.getLocation();
-    monsterOrPotion();
+    monsterOrWeapon();
 }
 
 var moveRight = function () {
     mapWalk.walkRight();
     mapWalk.getLocation();
-    monsterOrPotion();
+    monsterOrWeapon();
 }
 
 var keyGotPusheded = function  (e) {

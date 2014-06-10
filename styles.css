@@ -10,16 +10,21 @@ body {
 }
 
 header {
-	min-height: 150px;
 	overflow: hidden;
 	position: relative;
 	margin-bottom: 20px;
-	color: #12E316;
-	font-style: bold;
-	font-size: 50px;
 	text-shadow: 0px 3px 0px #1285E3;
 	text-align: center;
-	background-color: #754818;
+	background-color: #000;
+	border-radius: 5px;
+}
+
+.header h1 {
+	text-align: center;
+	color: lime;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-family: 'Press Start 2p', cursive;
 }
 
 li {
@@ -162,14 +167,6 @@ li {
 
 
 
-<<<<<<< HEAD
-
-header {
-	background-color: purple;
-	height: 100px;
-	font-family: sans-serif;
-}
-
 .map, .legend {
 	margin: 15px;
 	float: left;
@@ -189,10 +186,6 @@ header {
 	width: 200px;
 }
 
-.header h1 {
-	text-align: center;
-	color: green;
-}
 .playerStats {
 	padding: 0;
 }

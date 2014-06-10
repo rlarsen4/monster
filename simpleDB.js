@@ -13,7 +13,7 @@ player = {
         score: 0
 },
 
-//index 2 = player
+//index 2 = monster
 monster = [
         monsterA = {
             name: "Vampire",
