@@ -5,25 +5,25 @@ var mapWalk = new MapObject;
 var moveUp = function() {
     mapWalk.walkUp();
     mapWalk.getLocation();
-    monsterOrWeapon();
+    mapWalk.monsterOrWeapon();
 }
 
 var moveDown = function () {
     mapWalk.walkDown();
     mapWalk.getLocation();
-    monsterOrWeapon();
+    mapWalk.monsterOrWeapon();
 }
 
 var moveLeft = function () {
     mapWalk.walkLeft();
     mapWalk.getLocation();
-    monsterOrWeapon();
+    mapWalk.monsterOrWeapon();
 }
 
 var moveRight = function () {
     mapWalk.walkRight();
     mapWalk.getLocation();
-    monsterOrWeapon();
+    mapWalk.monsterOrWeapon();
 }
 
 var keyGotPusheded = function  (e) {
