@@ -7,6 +7,22 @@ notes
     interlock
     final design
 
+Objects
+    player 
+        controls movement on map
+    weapon
+        picks a weapon
+    monster
+        picks a monster
+
+    map
+        draws the map
+    scoreboard
+        renders scoreboard display
+    game
+        update display
+    payload
+        json object holds 
 
 Monday
 ------

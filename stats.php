@@ -3,19 +3,22 @@
     <fieldset><legend>Stats</legend>
         <div class="playerStats">
                 <fieldset><legend>Player</legend>
-                    <div class  ="playerType"></div>
-                    <div class="playerBio">Bio: She lives to fight.</div>
-                    <div class="health">Health: 100</div>
-                    <div class="score">Score: 100</div>
-                    <div class="currWeapon">Current Weapon: Sword</div>
+                    <div><span class ="playerImage"><img src="amazon.png" alt="You"> </span></div>
+                    <div>Player Type: <span class ="playerType"></span></div>
+                    <div>Player Bio: <span class="bio"></span></div>
+                    <div>Player Health: <span class="health"></span></div>
+                    <div>Player Score: <span class="score"></span></div>
+                    <div>Current Weapon: <span class="weapon"></span></div>
+                    <div>Weapon Description: <span class="weaponDesc"></span></div>
+                    <div><span class="weaponDesc"><img src="weapon.png" alt="Your weapon"> </span></div>
                 </fieldset>
         </div>
         <div>
             <fieldset><legend class="monsterLegend">Monster</legend>
-                <div class="monsterName"></div>
-                <div class="monsterBio"></div>
-                <div class="monsterLevel"></div>
-                <div class="monsterWeapon"></div>
+                <div>Opponent: <span class="monsterName"></span></div>
+                <div>Bio: <span class="monsterBio"></span></div>
+                <div>Level: <span class="monsterLevel"></span></div>
+                <div>Weapon: <span class="monsterWeapon"></span></div>
             </fieldset>
         </div>
     </fieldset>

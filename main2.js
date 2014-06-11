@@ -81,6 +81,23 @@ var MapObject = function() {
         console.log("button got pushed");
         this.addClass('clicked');
     }
+
+
+    this.monsterOrWeapon = function () {
+        var checkForMonsters = new Dice(5);
+        if (checkForMonsters.getRoll() == 1) {
+            aWeapon = new Weapon();
+            $('.attack').text('Pick Up');
+            $('.attack').addClass('pickUp');
+            $('.attack').removeClass('attack');
+
+        } else {
+            aMonster = new Monster();
+            aMonster.selectAMonster();
+            console.log(aMonster.currentMonster);
+            aScoreboard.drawScoreboard();
+        }
+    }
 };
 
 var Potion = function() {

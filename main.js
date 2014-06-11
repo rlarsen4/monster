@@ -1,20 +1,5 @@
 $(function() {
 
-var monsterOrWeapon = function () {
-    var checkForMonsters = new Dice(5);
-    if (checkForMonsters.getRoll() == 1) {
-        aWeapon = new Weapon();
-        // $('.gamePlay').text("");
-        // $('.gamePlay').text("Yummy potion");
-    } else {
-        aMonster = new Monster();
-        aMonster.selectAMonster();
-        console.log(aMonster.currentMonster);
-        // $('.gamePlay').text("");
-        // $('.gamePlay').text("Scary monster");
-    }
-}
-
 var mapWalk = new MapObject;
 
 var moveUp = function() {

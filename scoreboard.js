@@ -1,7 +1,6 @@
 var Scoreboard = function() {
     // properties
     var plyr = characterList[1];
-    var oppt = characterList[2];
     this.playerType = plyr.name;
     this.bio = plyr.bio;
     this.weapon = plyr.weapon;
@@ -14,15 +13,17 @@ var Scoreboard = function() {
 
     // methods
     this.drawScoreboard = function() {
+        $('.playerImage').text(this.playerType);
         $('.playerType').text(this.playerType);
-        $('.bio').text(this.playerType);
+        $('.bio').text(this.bio);
         $('.weapon').text(this.weapon);
         $('.health').text(this.health);
         $('.score').text(this.score);
-        $('.monsterName').text(this.monsterName);
-        $('.monsterBio').text(this.monsterBio);
-        $('.monsterLevel').text(this.monsterLevel);
-        $('.monsterWeapon').text(this.monsterWeapon);
+        $('.monsterName').text(aMonster.currentMonster.name);
+        $('.monsterName').text(aMonster.currentMonster.name);
+        $('.monsterBio').text(aMonster.currentMonster.bio);
+        $('.monsterLevel').text(aMonster.currentMonster.level);
+        $('.monsterWeapon').text(aMonster.currentMonster.weapon);
     };
 
 }
