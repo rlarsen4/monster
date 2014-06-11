@@ -6,24 +6,32 @@ var moveUp = function() {
     mapWalk.walkUp();
     mapWalk.getLocation();
     mapWalk.monsterOrWeapon();
+    aGame = new Game;
+    aGame.takeTurn();
 }
 
 var moveDown = function () {
     mapWalk.walkDown();
     mapWalk.getLocation();
     mapWalk.monsterOrWeapon();
+    aGame = new Game;
+    aGame.takeTurn();
 }
 
 var moveLeft = function () {
     mapWalk.walkLeft();
     mapWalk.getLocation();
     mapWalk.monsterOrWeapon();
+    aGame = new Game;
+    aGame.takeTurn();
 }
 
 var moveRight = function () {
     mapWalk.walkRight();
     mapWalk.getLocation();
     mapWalk.monsterOrWeapon();
+    aGame = new Game;
+    aGame.takeTurn();
 }
 
 var keyGotPusheded = function  (e) {
