@@ -22,6 +22,8 @@ players = [
             score: 0
     },
 
+],
+
 //index 2 = monster
 monster = [
         monsterA = {
