@@ -12,23 +12,23 @@ $(function() {
         // methods
 
 
-    this.playerTurn = function () {
+    this.playerAttack = function () {
 
-        var playerAttack = new Dice(12);
-            if (playerAttack.getRoll() === 0) {
-                playerAttack += 1;
+        var newAttack = new Dice(12);
+            if (newAttack.getRoll() === 0) {
+                newAttack += 1;
             }
-        console.log("Your roll: " + playerAttack);
-        playerAttack += weaponStrength;
-        console.log("your attack: " + playerAttack);
+        console.log("Your roll: " + newAttack);
+        newAttack += weaponStrength;
+        console.log("your attack: " + newAttack);
 
-        if (playerAttack >= enemyStrength) {
+        if (newAttack >= enemyStrength) {
             playerScore += 100;
             console.log("you win.");
         }
         else {
             var enemyAttack = new Dice(12);
-            if (enemyAttack.getRoll())
+            if (enemyAttack.getRoll()) {
             console.log("you missed");
             console.log("Enemy's attack: " + enemyAttack);
             playerHealth -= enemyAttack;
@@ -37,11 +37,9 @@ $(function() {
                 console.log("GAME OVER");
             }
         }     
-    }
+    }        
 
-        
-
-        playerRunAway
+        // Run Away was pushed
 
         this.runAway = function() {
             currLocation = prevLocation;
@@ -53,9 +51,6 @@ $(function() {
             this.health = this.health + 5;
 
         }
-
-
-
 
 
 
