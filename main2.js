@@ -94,7 +94,6 @@ var MapObject = function() {
         } else {
             aMonster = new Monster();
             aMonster.selectAMonster();
-            console.log(aMonster.currentMonster);
             aScoreboard.drawScoreboard();
         }
     }

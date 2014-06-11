@@ -309,3 +309,20 @@ fieldset {
 .runAway {
 	left: 260px;
 }
+
+.scoreboard {
+	margin-right: 20px;
+	min-width: 200px;
+}
+.scoreboard fieldset{
+	padding: 10px;
+}
+
+legend {
+	font-family: 'Press Start 2p';
+	font-size: 1.1em;
+}
+
+.divider {
+	text-align: center;
+}

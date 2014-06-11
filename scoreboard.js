@@ -13,13 +13,13 @@ var Scoreboard = function() {
 
     // methods
     this.drawScoreboard = function() {
-        $('.playerImage').text(this.playerType);
         $('.playerType').text(this.playerType);
         $('.bio').text(this.bio);
         $('.weapon').text(this.weapon);
-        $('.health').text(this.health);
+         $('.health').text(this.health);
         $('.score').text(this.score);
-        $('.monsterName').text(aMonster.currentMonster.name);
+        // $('.weaponImage').attr('src', bowAndArrowThumbnail.png)
+        $('.monsterImage').text(aMonster.currentMonster.name);
         $('.monsterName').text(aMonster.currentMonster.name);
         $('.monsterBio').text(aMonster.currentMonster.bio);
         $('.monsterLevel').text(aMonster.currentMonster.level);
