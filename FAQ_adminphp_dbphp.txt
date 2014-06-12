@@ -14,7 +14,7 @@ admin.php:
 	This is necessary in order to do the next testing step... Update the record).
 4. Update the record: Update with weapon_id = $sword_id, changing the weapon name
 	to an axe, & its weapon_str to 4.
-5. Delete the record: deletes the weapon record where the weapon_name is 'axe'.
+5. Delete the record: deletes the weapon record where the weapon_name is 'slime'.
 */
 
 SAMPLE OUTPUT:
