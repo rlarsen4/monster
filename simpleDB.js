@@ -1,7 +1,7 @@
 var characterList = [
 //index 0 = weapon type
 weaponType = [
-    "sword", "club"
+    "potion", "sword", "bow & arrow"
 ],
 
 //index 1 = player
@@ -9,7 +9,7 @@ players = [
     playerA = {
             name: "Amazon",
             bio: "I'm a hero",
-            weapon: weaponType[0],
+            weapon: weaponType[1],
             health: 100,
             score: 0
     },
@@ -17,10 +17,18 @@ players = [
     playerB = {
             name: "Elf",
             bio: "I'm an Elf",
-            weapon: weaponType[0],
+            weapon: weaponType[2],
             health: 100,
             score: 0
     },
+
+    playerC = {
+        name: "Nerd",
+        bio: "I like pocket protectors",
+        weapon: weaponType[1],
+        health: 100,
+        score: 0
+    }
 
 ],
 

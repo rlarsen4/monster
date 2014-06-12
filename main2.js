@@ -26,9 +26,7 @@ var MapObject = function() {
         } else {
             prevLocation = currLocation;
             currLocation -= 5;
-        }
-
-        
+        }        
     }
 
     this.walkDown = function() {

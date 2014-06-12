@@ -1,7 +1,7 @@
 <?php  ?>
 <div class="map">
     <fieldset>
-    <legend>MAP</legend>
+    <legend>Map</legend>
         <div class="row">
             <div class="tile" id="1"></div>
             <div class="tile" id="2"></div>
@@ -41,7 +41,7 @@
 </div>
 <div class="legend">
     <fieldset>
-        <legend>LEGEND</legend>
+        <legend>Legend</legend>
     <div>
         <div class="tile activeTile"></div>
         *YOU ARE HERE.
