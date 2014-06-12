@@ -1,6 +1,6 @@
-var Scoreboard = function() {
+var Scoreboard = function(player) {
     // properties
-    var plyr = characterList[1];
+    var plyr = characterList[1][player];
     this.playerType = plyr.name;
     this.bio = plyr.bio;
     this.weapon = plyr.weapon;
@@ -28,6 +28,6 @@ var Scoreboard = function() {
 
 }
 
-var aScoreboard = new Scoreboard;
+var aScoreboard = new Scoreboard(0);
 
 aScoreboard.drawScoreboard();

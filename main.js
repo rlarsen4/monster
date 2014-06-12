@@ -2,6 +2,8 @@ $(function() {
 
 var mapWalk = new MapObject;
 
+var aWeapon = new Weapon;
+aWeapon.getWeapon(1);
 var moveUp = function() {
     mapWalk.walkUp();
     mapWalk.getLocation();

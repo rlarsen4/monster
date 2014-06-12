@@ -82,10 +82,10 @@ var MapObject = function() {
         this.addClass('clicked');
     }
 
-
     this.monsterOrWeapon = function () {
         var checkForMonsters = new Dice(5);
         if (checkForMonsters.getRoll() == 1) {
+            var select
             aWeapon = new Weapon();
             $('.attack').text('Pick Up');
             $('.attack').addClass('pickUp');
@@ -95,6 +95,9 @@ var MapObject = function() {
             aMonster = new Monster();
             aMonster.selectAMonster();
             aScoreboard.drawScoreboard();
+            $('.pickUp').text('Attack');
+            $('.pickUp').addClass('attack');
+            $('.pickUp').removeClass('pickUp');
         }
     }
 };

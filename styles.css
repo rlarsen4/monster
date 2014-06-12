@@ -283,37 +283,39 @@ fieldset {
 	border-bottom-right-radius: 5px;
 }
 
-.up, .left, .right, .down, .center, .attack, .runAway {
+.up, .left, .right, .down, .center, .attack, .pickUp, .runAway {
 	border-right: 2px solid #ccc;
 	border-bottom: 2px solid #ccc;
+	color: #fff;
 }
 
 .directional .clicked {
 	border-top: 2px solid #ccc;
 	border-left: 2px solid #ccc;
 }
-.attack, .runAway {
+.attack, .runAway, .pickUp {
 	background-color: #777;
 	display: inline-block;
 	border-radius: 5px;
 	padding: 6px;
-	min-width: 50px;
+	min-width: 75px;
 	position: absolute;
 	top: 75px;
 }
 
-.attack {
+.attack .pickUp {
 	left: 200px;
 }
 
 .runAway {
-	left: 260px;
+	left: 300px;
 }
 
 .scoreboard {
 	margin-right: 20px;
 	min-width: 200px;
 }
+
 .scoreboard fieldset{
 	padding: 10px;
 }
