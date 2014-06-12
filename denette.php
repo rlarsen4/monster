@@ -5,6 +5,7 @@
 	<title></title>
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
    	<script src="denette.js"></script>
+   	<script src="simpleDB.js"></script>
    	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
@@ -30,10 +31,10 @@
 			<div class="bioAside">
 				<fieldset>
 					<legend>Player Bio</legend>
-						<div>Name: Warrior</div>
-						<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, quidem?</div>
-						<div>Weapon: sword</div>
-						<div>Strength: 6</div>
+						<div>Name: <span class="bioName"></span></div>
+						<div>Bio: <span class="bioBio"></span></div>
+						<div>Weapon: <span class="bioWeapon"></span></div>
+						<div>Strength: <span class="bioStrength"></span></div>
 				</fieldset>
 			</div>
 	</aside>

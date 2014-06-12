@@ -26,9 +26,7 @@ var MapObject = function() {
         } else {
             prevLocation = currLocation;
             currLocation -= 5;
-        }
-
-        
+        }        
     }
 
     this.walkDown = function() {
@@ -82,7 +80,6 @@ var MapObject = function() {
         this.addClass('clicked');
     }
 
-
     this.monsterOrWeapon = function () {
         var checkForMonsters = new Dice(5);
         if (checkForMonsters.getRoll() == 1) {
@@ -95,6 +92,9 @@ var MapObject = function() {
             aMonster = new Monster();
             aMonster.selectAMonster();
             aScoreboard.drawScoreboard();
+            $('.pickUp').text('Attack');
+            $('.pickUp').addClass('attack');
+            $('.pickUp').removeClass('pickUp');
         }
     }
 };

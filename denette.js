@@ -7,7 +7,8 @@ var choosePlayer = function(){
 	// Start button appears
 	$('.startButton').show();
 	// Clicked on player's bio appears in the Aside under the Directions
-	$('.bioAside').show();
+	// $('.bioAside').show();
+	renderBio();
 };
 
 var startGame = function(){
@@ -21,17 +22,30 @@ $('button.player').on("click", choosePlayer);
 $('.playerChoices').on("click", '.startButton', startGame);
 
 
-// $(document).ready(function(){
 
-// 	$(".main ul li a img").mouseenter(function() {
-// $(this).animate({height:600,width:600}, 200);
-// $(this).css("z-index","999");
-// });
+// var renderBio = function(){
+//     var plyr = characterList[1];
+//     this.playerType = plyr.name;
+//     this.bio = plyr.bio;
+//     this.weapon = plyr.weapon;
 
-// $(".main ul li a img").mouseout(function() {
-// $(this).animate({height:200,width:200}, 200);
-// $(this).css("z-index","1");
-// });
-// 	});
+// 	// $('.bioName').remove(plyr.name);
+// 	// $('.bioBio').remove(plyr.bio);
+// 	// $('.bioWeapon').remove(plyr.weapon);
+
+// 	$('.bioAside').show();
+// 	$('.bioName').text(plyr.name);
+// 	$('.bioBio').text(plyr.bio);
+// 	$('.bioWeapon').text(plyr.weapon);
+
+// }
+
+
+
+
+
+
+
+
 
 });

@@ -8,7 +8,7 @@ include('db.php');
 
 //Connect to DB
 //same as saying in T, use avnet_games for testing a db
-$connection = new DB("localhost", "root", "","avnet_games");
+$connection = new DB("localhost", "root", "","txtadvnew");
 
 
 
@@ -19,9 +19,9 @@ function dumpWeapons($connection) {
 
 	echo "Dumping weapons table: <br>";
 	while ($row = $results->fetch_assoc()) {
-		echo "weapon_ID => " . $row['weapon_ID'] . ", ";
+		echo "weapon_id => " . $row['weapon_id'] . ", ";
 		echo "weapon_name => " . $row['weapon_name'] . ", ";
-		echo "weapon_str => " . $row['weapon_str'] . '<br>';
+		echo "weapon_image => " . $row['weapon_image'] . '<br>';
 	}
 }
 
@@ -30,7 +30,7 @@ dumpWeapons($connection);
 echo "<br>Create a new record: <br>";
 $sql_values = [
 	'weapon_name' => 'sword',
-	'weapon_str' => 3
+	'weapon_image' => 'images/sword1.jpg'
 ];
 
 $connection->create("weapons", $sql_values);
@@ -45,17 +45,17 @@ $sql_values = [
 $results = $connection->retrieve("weapons", $sql_values);
 
 while ($row = $results->fetch_assoc()) {
-	echo "weapon_ID => " . $row['weapon_ID'] . ", ";
-	$sword_id = $row['weapon_ID'];
+	echo "weapon_id => " . $row['weapon_id'] . ", ";
+	$sword_id = $row['weapon_id'];
 	echo "weapon_name => " . $row['weapon_name'] . ", ";
-	echo "weapon_str => " . $row['weapon_str'] . '<br>';
+	echo "weapon_image => " . $row['weapon_image'] . '<br>';
 }
 
 echo "<br>Update a record: <br>";
 $sql_values = [
-	'weapon_ID' => $sword_id,
-	'weapon_name' => 'axe',
-	'weapon_str' => '4'
+	'weapon_id' => $sword_id,
+	'weapon_name' => 'slime',
+	'weapon_image' => 'images/slime1.jpg'
 ];
 
 $connection->update("weapons", $sql_values);
@@ -64,7 +64,7 @@ dumpWeapons($connection);
 
 echo "<br>Delete a record: <br>";
 $sql_values = [
-	'weapon_name' => 'axe',
+	'weapon_name' => 'slime',
 ];
 
 $connection->delete("weapons", $sql_values);
