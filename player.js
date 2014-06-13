@@ -1,30 +1,30 @@
-$(function() {    
+$(function() {   
 
     var Player = function(selectedPlayer){
-        // Properties
-        this.playerName = [characterList[1][selectedPlayer].name];
-        this.playerBio = [characterList[1][selectedPlayer].bio];
-        this.weapon = [characterList[1][selectedPlayer].weapon];
-        this.health = [characterList[1][selectedPlayer].health];
-        this.score = [characterList[1][selectedPlayer].score];
 
+        this.currentPlayer = ({
+        playerName: [characterList[1][selectedPlayer].name],
+        playerBio: [characterList[1][selectedPlayer].bio],
+        weapon: [characterList[1][selectedPlayer].weapon],
+        health: [characterList[1][selectedPlayer].health],
+        score: [characterList[1][selectedPlayer].score]
+        });
+    console.log (this.currentPlayer); 
 
-
+    
     // methods
-
-
+    // Player decides to attack
     this.playerAttack = function () {
         
-        var enemyStrength = [characterList[2].level];
+        var enemyStrength = aMonster.level;
+        console.log(enemyStrength);
 
         var newAttack = new Dice(12);
             if (newAttack.getRoll() === 0) {
                 newAttack += 1;
             }
         console.log("Your roll: " + newAttack);
-        // newAttack += weaponStrength;
-        // console.log("your attack: " + newAttack);
-
+        
         if (newAttack >= enemyStrength) {
             this.score += 100;
             console.log("you win.");
@@ -41,34 +41,30 @@ $(function() {
             }
         }     
     }        
-
-        // Run Away was pushed
-        this.runAway = function() {
-            currLocation = prevLocation;
+}
+    // Run Away was pushed
+    this.runAway = function() {
+        currLocation = prevLocation;
+    }
+        
+    // Player can pick up a potion
+    this.pickupHealth = function() {
+        if (aWeapon == [characterList[0][0]]) {
+            this.health = this.health + 5;
         }
         
-        // Player can pick up a potion
-        this.pickupHealth = function() {
-            if (aWeapon == [characterList[0][0]]) {
-                this.health = this.health + 5;
-            }
-            
-        }
-
     }
-}
-
-var aPlayer = new Player(0);
-console.log (aPlayer.playerName);
-
-
-        $('.attack').on("click", aPlayer.playerAttack);
-        $('.runAway').on("click", this.runAway);
-        $('.pickUp').on("click", this.playerPickup);
 
 
     
+    };
 
+    var aPlayer = new Player(1);
+    console.log (aPlayer.playerName);
+
+    $('.attack').on("click", aPlayer.playerAttack);
+    $('.runAway').on("click", this.runAway);
+    $('.pickUp').on("click", this.playerPickup); 
 
 
 
