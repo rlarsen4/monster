@@ -325,3 +325,18 @@ legend {
 .divider {
 	text-align: center;
 }
+
+/*gameover.php*/
+.gameOver {
+	background-color: #000;
+	font-family: 'Press Start 2p';
+	color: lime;
+	max-width: 60%;
+	margin: auto;
+	text-align: center;
+}
+.replay {
+	background-color: #ccc;
+	margin: 20px;
+	padding: 10px;
+}

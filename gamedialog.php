@@ -49,7 +49,8 @@
 
 <script type="text/javascript" src="simpleDB.js"></script>
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-<script type="text/javascript" src="main2.js"></script>
+<script type="text/javascript" src="map.js"></script>
+<script type="text/javascript" src="dice.js"></script>
 <script type="text/javascript" src="main.js"></script>
 <script type="text/javascript" src="game.js"></script>
 <script type="text/javascript" src="weapon.js"></script>

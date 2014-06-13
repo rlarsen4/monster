@@ -16,6 +16,7 @@ var moveDown = function () {
     mapWalk.walkDown();
     mapWalk.getLocation();
     mapWalk.monsterOrWeapon();
+    console.log(mapWalk.monsterOrWeapon());
     aGame = new Game;
     aGame.takeTurn();
 }
