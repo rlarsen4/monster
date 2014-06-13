@@ -1,38 +1,41 @@
 $(function() {
 
-var mapWalk = new MapObject;
-
+var aMap = new MapObject;
+console.log(aMap);
+var aController = new App;
+console.log(aController);
 var aWeapon = new Weapon;
+
 aWeapon.getWeapon(1);
 var moveUp = function() {
-    mapWalk.walkUp();
-    mapWalk.getLocation();
-    mapWalk.monsterOrWeapon();
+    aController.walkUp();
+    aController.getLocation();
+    aController.monsterOrWeapon();
     aGame = new Game;
     aGame.takeTurn();
 }
 
 var moveDown = function () {
-    mapWalk.walkDown();
-    mapWalk.getLocation();
-    mapWalk.monsterOrWeapon();
-    console.log(mapWalk.monsterOrWeapon());
+    aController.walkDown();
+    aController.getLocation();
+    aController.monsterOrWeapon();
+    console.log(aController.monsterOrWeapon());
     aGame = new Game;
     aGame.takeTurn();
 }
 
 var moveLeft = function () {
-    mapWalk.walkLeft();
-    mapWalk.getLocation();
-    mapWalk.monsterOrWeapon();
+    aController.walkLeft();
+    aController.getLocation();
+    aController.monsterOrWeapon();
     aGame = new Game;
     aGame.takeTurn();
 }
 
 var moveRight = function () {
-    mapWalk.walkRight();
-    mapWalk.getLocation();
-    mapWalk.monsterOrWeapon();
+    aController.walkRight();
+    aController.getLocation();
+    aController.monsterOrWeapon();
     aGame = new Game;
     aGame.takeTurn();
 }
@@ -54,13 +57,13 @@ var keyGotPusheded = function  (e) {
     // body...
 }
 //event listeners
-mapWalk.getLocation();
+aController.getLocation();
 $('.up').on('click', moveUp);
 $('.down').on('click',moveDown) ;
 $('.left').on('click', moveLeft);
 $('.right').on('click', moveRight);
-$('.runAway').on('click', mapWalk.runAway);
-$('.runAway').on('click', mapWalk.getLocation);
+$('.runAway').on('click', aController.runAway);
+$('.runAway').on('click', aController.getLocation);
 $(document).keydown(keyGotPusheded);
 
 

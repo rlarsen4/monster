@@ -11,67 +11,6 @@ var MapObject = function() {
         $(prevLocationId).addClass('visitedTile');
     }
 
-    this.walkUp = function() {
-        
-        if (currLocation <= 5) {
-            currLocation = currLocation;
-        } else {
-            prevLocation = currLocation;
-            currLocation -= 5;
-        }        
-    }
-
-    this.walkDown = function() {
-        if (currLocation >= 21) {
-            currLocation = currLocation;
-        } else {
-            prevLocation = currLocation;
-            currLocation += 5;
-        }
-    }
-
-    this.walkLeft = function() {
-        if (currLocation == 1) {
-            currLocation = currLocation;
-        } else if (currLocation == 6) {
-            currLocation = currLocation;
-        } else if (currLocation == 11) {
-            currLocation = currLocation;
-        } else if (currLocation == 16) {
-            currLocation = currLocation;
-        } else if (currLocation == 21) {
-            currLocation = currLocation;
-        } else {
-            prevLocation = currLocation;
-            currLocation -= 1;
-        }
-    }
-
-    this.walkRight = function() {
-        if (currLocation == 5){
-            currLocation = currLocation;
-        } else if (currLocation == 10) {
-            currLocation = currLocation;
-        } else if (currLocation == 15) {
-            currLocation = currLocation;
-        } else if (currLocation == 20) {
-            currLocation = currLocation;
-        } else if (currLocation == 25) {
-            currLocation = currLocation;
-        } else {
-            prevLocation = currLocation;
-            currLocation += 1;
-        }
-    }
-    this.runAway = function  () {
-        currLocation = prevLocation;
-    }
-
-    this.buttonClick = function () {
-        console.log("button got pushed");
-        this.addClass('clicked');
-    }
-
     this.monsterOrWeapon = function () {
         var checkForMonsters = new Dice(5);
         if (checkForMonsters.getRoll() == 1) {
