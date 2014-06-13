@@ -48,7 +48,7 @@
     </div>
 
 <script type="text/javascript" src="simpleDB.js"></script>
-<script type="text/javascript" src="code.jquery.com/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="jquery-1.11.1.min.js"></script>
 <script type="text/javascript" src="map.js"></script>
 <script type="text/javascript" src="dice.js"></script>
 <script type="text/javascript" src="main.js"></script>

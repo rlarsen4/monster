@@ -193,10 +193,6 @@ li {
 fieldset {
 	border-radius: 5px;
 	padding: 10;
-<<<<<<< HEAD
-
-=======
->>>>>>> eb5fe4cc494307ca0800462750c3634c8764537f
 }
 
 .tile {
@@ -334,9 +330,21 @@ legend {
 	max-width: 60%;
 	margin: auto;
 	text-align: center;
-}
-.replay {
-	background-color: #ccc;
-	margin: 20px;
+	margin-top: 250px;
+	z-index: 500;
 	padding: 10px;
 }
+
+.replay {
+	background-color: #ccc;
+	margin: auto;
+	padding: 10px;
+	width: 200px;
+
+}
+
+
+
+/*.inactive {
+	display: hidden;	
+}*/
