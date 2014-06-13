@@ -76,7 +76,7 @@ var MapObject = function() {
         var checkForMonsters = new Dice(5);
         if (checkForMonsters.getRoll() == 1) {
             aWeapon = new Weapon();
-            currentMonster = ();
+            currentMonster = [];
             $('.attack').text('Pick Up');
             $('.attack').addClass('pickUp');
             $('.attack').removeClass('attack');
