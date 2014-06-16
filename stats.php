@@ -2,13 +2,22 @@
 <div class="scoreboard">
     <fieldset><legend>Stats</legend>
         <div class="playerStats">
+                <fieldset><legend>Quick Start Rules</legend>
+                    <ol>
+                        <li>Choose a player you want to be</li>
+                        <li>Click the Start button</li>
+                        <li>The Game board opens for you</li>
+                        <li>Use the Up/ Down/ Side arrows to move around the board</li>
+                        <li>Fight monsters, get rewards, get points and figure it out. That's all the information you get.</li>
+                    </ol>
+                </fieldset>
                 <fieldset><legend>Player</legend>
                     <div><span class ="playerImage"><img src="amazon.png" alt="You"> </span></div>
                     <div class="divider">---</div>
                     <div>Player Type: <span class ="playerType"></span></div>
                     <div>Player Bio: <span class="bio"></span></div>
-                    <div>Player Health: <span class="health"></span></div>
-                    <div>Player Score: <span class="score"></span></div>
+                    <div>Player Health: <span class="health inactive"></span></div>
+                    <div>Player Score: <span class="score inactive"></span></div>
                     <div>Current Weapon: <span class="weapon"></span></div>
                     <div>Weapon Description: <span class="weaponDesc"></span></div>
                     <div class="divider">---</div>

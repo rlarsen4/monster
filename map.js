@@ -1,6 +1,6 @@
 var MapObject = function() {
-    var currLocation = 1;
-    var prevLocation = 1;
+    this.currLocation = 1;
+    this.prevLocation = 1;
 
     this.getLocation = function(){
         var currLocationId = "#" + currLocation;

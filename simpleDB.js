@@ -7,6 +7,7 @@ weaponType = [
 //index 1 = player
 players = [
     playerA = {
+            image: "amazon.png",
             name: "Amazon",
             bio: "I'm a hero",
             weapon: weaponType[1],
@@ -15,6 +16,7 @@ players = [
     },
 
     playerB = {
+            image: "archer-160389_150.png",
             name: "Elf",
             bio: "I'm an Elf",
             weapon: weaponType[2],
@@ -23,6 +25,7 @@ players = [
     },
 
     playerC = {
+        image: "barbarian-152853_150.png",
         name: "Nerd",
         bio: "I like pocket protectors",
         weapon: weaponType[1],

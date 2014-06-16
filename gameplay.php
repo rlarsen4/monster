@@ -9,7 +9,7 @@
 <body>
     <!-- content at top - put header here-->
     <header> <?php include('header.php'); ?></header>
-    <!-- <div class="playerSelector inactive"><?php// include 'denette.php'; ?></div> -->
+    <div class="playerSelector inactive"><?php include 'denette.php'; ?></div>
     <div> 
         <!-- load the map on the left -->
         <div class="map"><?php include 'map.php'; ?> </div>

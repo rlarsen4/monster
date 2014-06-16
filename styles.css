@@ -91,9 +91,28 @@ li {
 	display: none;
 }
 
+/* playerSelector styles*/
 
+.playerSelectorButton {
+	display: inline-block;
+	margin: 20px;
+	background-color: #ccc;
+	width: 150px;
+	height: 150px;
+	text-align: center;
+}
 
+.playerSelectorFieldset {
+	float: left;
+	min-width: 70%;
+}
 
+.startGameButton {
+	width: 100px;
+	padding: 10px;
+	float: right;
+	background-color: #ccc;
+}
 
 
 
@@ -183,7 +202,7 @@ li {
 
 .stats {
 	float: right;
-	width: 200px;
+	width: 25%;
 }
 
 .playerStats {
@@ -343,8 +362,7 @@ legend {
 
 }
 
-
-
-/*.inactive {
-	display: hidden;	
-}*/
+.inactive {
+	display: none;
+	background-color: red;	
+}

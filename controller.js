@@ -1,7 +1,11 @@
 ;var App = App || {};
 (function($) {
-    App.Controller = {
-         
+
+    App.Controller = function(){
+        //
+        // ASK BRAD ABOUT DANIEL'S HACK HERE!!!
+        //
+        return {
         walkUp: function(){
         
             if (currLocation <= 5) {
@@ -60,11 +64,12 @@
         },
 
         buttonClick: function () {
-            console.log("button got pushed");
+            // console.log("button got pushed");
             this.addClass('clicked');
         }
     }
+}
 })(jQuery);
-console.log(App.Controller);
-var aApp = new App;
+// console.log(App.Controller);
+var aApp = new App.Controller;
 // console.log(aApp + "hi from Controller");

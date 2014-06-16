@@ -1,9 +1,7 @@
 $(function() {
 
 var aMap = new MapObject;
-console.log(aMap);
-var aController = new App;
-console.log(aController);
+// var aController = new App;
 var aWeapon = new Weapon;
 
 aWeapon.getWeapon(1);
@@ -57,13 +55,13 @@ var keyGotPusheded = function  (e) {
     // body...
 }
 //event listeners
-aController.getLocation();
+// aController.getLocation();
 $('.up').on('click', moveUp);
 $('.down').on('click',moveDown) ;
 $('.left').on('click', moveLeft);
 $('.right').on('click', moveRight);
-$('.runAway').on('click', aController.runAway);
-$('.runAway').on('click', aController.getLocation);
+// $('.runAway').on('click', aController.runAway);
+// $('.runAway').on('click', aController.getLocation);
 $(document).keydown(keyGotPusheded);
 
 
