@@ -54,6 +54,7 @@ var keyGotPusheded = function  (e) {
     }
     // body...
 }
+
 //event listeners
 // aController.getLocation();
 $('.up').on('click', moveUp);
@@ -62,6 +63,7 @@ $('.left').on('click', moveLeft);
 $('.right').on('click', moveRight);
 // $('.runAway').on('click', aController.runAway);
 // $('.runAway').on('click', aController.getLocation);
+$('.replay').on('click', App.GameOver.playAgain );
 $(document).keydown(keyGotPusheded);
 
 

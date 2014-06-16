@@ -11,13 +11,13 @@
     <header> <?php include('header.php'); ?></header>
     
     <!--playerSelector visible first-->
-    <div class="playerSelector"><?php include('playerSelector.php'); ?></div>
+    <div class="playerSelector inactive"><?php include('playerSelector.php'); ?></div>
     
     <!-- load stats on the right -->
-    <div class="stats"><?php include('stats.php'); ?> </div>
+    <div class="stats inactive"><?php include('stats.php'); ?> </div>
     
     <!-- container for map & gamedialog-->
-    <div class="gameplay"> 
+    <div class="gameplay inactive"> 
         <!-- load the map on the left -->
         <div class="map"><?php include('map.php'); ?> </div>
         <!-- load dialog in the middle -->
@@ -28,10 +28,10 @@
     <div class="gameover"><?php include('gameover.php'); ?></div>
 
 
-	<script type="text/javascript" src="handlebars-v1.3.0"></script>
     <script src="jquery-1.11.1.min.js"></script>
     <script type="text/javascript"></script>
    	<script src="denette.js"></script>
+    <script type="text/javascript" src="gameover.js"></script>
 </body>
 </html>
 

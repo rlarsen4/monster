@@ -6,5 +6,6 @@
     
 <div class="gameOver">
     <h1>Game Over</h1>
+    <h3>Final Score: <span class="finalScore"></span></h3>
     <div class="replay">play again?</div>
 </div>

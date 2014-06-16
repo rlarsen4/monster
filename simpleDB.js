@@ -25,7 +25,7 @@ players = [
     },
 
     playerC = {
-        image: "barbarian-152853_150.png",
+        image: "barbarian.png",
         name: "Nerd",
         bio: "I like pocket protectors",
         weapon: weaponType[1],
