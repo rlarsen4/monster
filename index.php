@@ -17,7 +17,7 @@
     <div class="stats"><?php include('stats.php'); ?> </div>
     
     <!-- container for map & gamedialog-->
-    <div class="gameplay inactive"> 
+    <div class="gameplay"> 
         <!-- load the map on the left -->
         <div class="map"><?php include('map.php'); ?> </div>
         <!-- load dialog in the middle -->
@@ -25,7 +25,7 @@
     </div>
 
     <!-- gameover page-->
-    <div class="gameover inactive"><?php include('gameover.php'); ?></div>
+    <div class="gameover"><?php include('gameover.php'); ?></div>
 
 
 	<script type="text/javascript" src="handlebars-v1.3.0"></script>
