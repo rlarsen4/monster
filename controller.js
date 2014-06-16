@@ -70,4 +70,6 @@
     }
 }
 })(jQuery);
+// console.log(App.Controller);
 var aApp = new App.Controller;
+// console.log(aApp + "hi from Controller");
