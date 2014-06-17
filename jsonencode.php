@@ -5,7 +5,19 @@ include('db.php');
 
 
 // this function expects a string containing the table name to retrieve
-// right now the database host, user, and database name are hardcoded
+// right now the database host, user, and database name are hardcoded.
+/*
+So, replace this in here: $connection = new DB("localhost", "root", "","monster");
+with this... Amazon server info=
+
+host: rockit.ccyd2ljjwzet.us-east-1.rds.amazonaws.com
+
+username: monster
+
+password: rockit
+
+db name: monster
+*/
 function getPhpArrayFromTable($table) {
      echo "<br>Retrieve table: " . $table ."<br>";
      $connection = new DB("localhost", "root", "","monster");
