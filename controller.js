@@ -6,6 +6,11 @@
         // ASK BRAD ABOUT DANIEL'S HACK HERE!!!
         //
         return {
+
+        this.currLocation: aMap.currLocation,
+        this.prevLocation: aMap.prevLocation,
+
+
         walkUp: function(){
         
             if (currLocation <= 5) {

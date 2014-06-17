@@ -11,10 +11,10 @@
     <header> <?php include('header.php'); ?></header>
     
     <!--playerSelector visible first-->
-    <div class="playerSelector inactive"><?php include('playerSelector.php'); ?></div>
+    <div class="playerSelector"><?php include('playerSelector.php'); ?></div>
     
     <!-- load stats on the right -->
-    <div class="stats inactive"><?php include('stats.php'); ?> </div>
+    <div class="stats"><?php include('stats.php'); ?> </div>
     
     <!-- container for map & gamedialog-->
     <div class="gameplay inactive"> 
@@ -25,7 +25,7 @@
     </div>
 
     <!-- gameover page-->
-    <div class="gameover"><?php include('gameover.php'); ?></div>
+    <div class="gameover inactive"><?php include('gameover.php'); ?></div>
 
 
     <script src="jquery-1.11.1.min.js"></script>
