@@ -22,6 +22,7 @@
 	<script src="jquery-1.11.1.min.js"></script>
    	<script src="denette.js"></script>
     <script type="text/javascript" src="controller.js"></script>
+     <script type="text/javascript" src="dice.js"></script>
 </body>
 </html>
 
