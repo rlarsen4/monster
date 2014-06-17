@@ -5,9 +5,9 @@ var howManyHeroes = listPlayers.length;
 
 for (i = 0; i < howManyHeroes; i++) {
     $('.playerSelectorFieldset').append("<div class='playerSelectorButton'>" 
-        + "<img src='"
+        + "<img src='image/"
         + listPlayers[i].image
-        + "'>"
+        + "'><br>"
         + listPlayers[i].name
         + "<br>" 
         + listPlayers[i].bio

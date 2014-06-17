@@ -16,7 +16,7 @@ players = [
     },
 
     playerB = {
-            image: "archer-160389_150.png",
+            image: "elf.png",
             name: "Elf",
             bio: "I'm an Elf",
             weapon: weaponType[2],
@@ -29,6 +29,15 @@ players = [
         name: "Nerd",
         bio: "I like pocket protectors",
         weapon: weaponType[1],
+        health: 100,
+        score: 0
+    },
+
+    playerD = {
+        image: "wizard.png",
+        name: "Wizard",
+        bio: "Smooth!",
+        weapon: weaponType[2],
         health: 100,
         score: 0
     }
