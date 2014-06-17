@@ -5,26 +5,28 @@ var aMap = new MapObject;
 var aWeapon = new Weapon;
 var aGame = new Game;
 
-aWeapon.getWeapon(1);
-
 var moveUp = function() {
     aController.walkUp();
     aMap.getLocation(aController);
+    aMap.monsterOrWeapon();
 }
 
 var moveDown = function () {
     aController.walkDown();
     aMap.getLocation(aController);
+    aMap.monsterOrWeapon();
 }
 
 var moveLeft = function () {
     aController.walkLeft();
     aMap.getLocation(aController);
+    aMap.monsterOrWeapon();
 }
 
 var moveRight = function () {
     aController.walkRight();
     aMap.getLocation(aController);
+    aMap.monsterOrWeapon();
 }
 
 var keyGotPusheded = function  (e) {

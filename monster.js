@@ -5,10 +5,7 @@ var Monster = function() {
     this.selectAMonster = function() {
         this.howManyMonsters = characterList[2].length;
         var monsterDice = new Dice(this.howManyMonsters);
-        this.currentMonster = characterList[2][monsterDice.roll()];  
+        this.currentMonster = characterList[2][monsterDice.roll()]; 
+        return this.currentMonster; 
     }
 }
-
-var aMonster = new Monster;
-
-aMonster.selectAMonster();
