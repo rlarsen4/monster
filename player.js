@@ -39,7 +39,7 @@ $(function() {
             if (enemyAttack) {
             console.log("you missed");
             console.log("Enemy's attack: " + enemyAttack);
-            this.health -= enemyAttack;
+            aPlayer.health -= enemyAttack;
             console.log("your score: " + this.score + ". Your health: " + this.health);
             if (this.health === 0) {
                 console.log("GAME OVER");
