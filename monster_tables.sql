@@ -39,7 +39,7 @@ CREATE TABLE `character` (
 
 LOCK TABLES `character` WRITE;
 /*!40000 ALTER TABLE `character` DISABLE KEYS */;
-INSERT INTO `character` VALUES (7,0,'Amazon','',20,''),(10,0,'Elf','',21,''),(11,0,'Human','',22,''),(12,0,'Knight','',23,''),(13,0,'Wizard','',26,''),(14,0,'T-Rex','',25,''),(15,1,'Ogre','',2,''),(16,1,'Vampire','',11,''),(17,1,'Swamp Man','',12,''),(18,1,'Lizard Man','',13,''),(19,1,'Scorpion','',14,''),(20,1,'Giant Spider','',15,''),(21,1,'Skeleton','',16,''),(22,1,'Werewolf','',17,''),(23,1,'Witch','',18,'');
+INSERT INTO `character` VALUES (7,0,'Amazon','',20,''),(10,0,'Elf','',21,''),(11,0,'Human','',22,''),(12,0,'Knight','',23,''),(13,0,'Wizard','',26,''),(14,0,'T-Rex','',25,''),(15,1,'Ogre','',2,''),(16,1,'Vampire','',11,''),(17,1,'Swampman','',12,''),(18,1,'Lizardman','',13,''),(19,1,'Scorpion','',14,''),(20,1,'GiantSpider','',15,''),(21,1,'Skeleton','',16,''),(22,1,'Werewolf','',17,''),(23,1,'Witch','',18,'');
 /*!40000 ALTER TABLE `character` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -174,4 +174,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2014-06-15 11:50:29
+-- Dump completed on 2014-06-16 17:26:02
