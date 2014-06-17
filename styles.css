@@ -200,7 +200,7 @@ li {
 	padding: 5px;
 }
 
-.stats {
+.scoreboard {
 	float: right;
 	width: 25%;
 }
@@ -244,7 +244,7 @@ fieldset {
 	background-color: yellow;
 }
 
-.stats {
+.scoreboard {
 	padding: 0;
 }
 

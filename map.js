@@ -1,34 +1,32 @@
 var MapObject = function() {
-    this.currLocation = 1;
-    this.prevLocation = 1;
-
-    this.getLocation = function(){
-        var currLocationId = "#" + currLocation;
-        var prevLocationId = "#" + prevLocation;
+    this.getLocation = function(controllerData){
+        var currLocationId = "#" + controllerData.currLocation;
+        var prevLocationId = "#" + controllerData.prevLocation;
         $(currLocationId).addClass('activeTile');
         $(currLocationId).removeClass('visitedTile');
         $(currLocationId).removeClass('goalTile');
         $(prevLocationId).addClass('visitedTile');
+
     }
 
-    this.monsterOrWeapon = function () {
-        var checkForMonsters = new Dice(5);
-        if (checkForMonsters.getRoll() == 1) {
-            aWeapon = new Weapon();
-            currentMonster = [];
-            $('.attack').text('Pick Up');
-            $('.attack').addClass('pickUp');
-            $('.attack').removeClass('attack');
+    // this.monsterOrWeapon = function () {
+    //     var checkForMonsters = new Dice(5);
+    //     if (checkForMonsters.getRoll() == 1) {
+    //         aWeapon = new Weapon();
+    //         currentMonster = [];
+    //         $('.attack').text('Pick Up');
+    //         $('.attack').addClass('pickUp');
+    //         $('.attack').removeClass('attack');
 
-        } else {
-            aMonster = new Monster();
-            aMonster.selectAMonster();
-            aScoreboard.drawScoreboard();
-            $('.pickUp').text('Attack');
-            $('.pickUp').addClass('attack');
-            $('.pickUp').removeClass('pickUp');
-        }
-    }
+    //     } else {
+    //         aMonster = new Monster();
+    //         aMonster.selectAMonster();
+    //         aScoreboard.drawScoreboard();
+    //         $('.pickUp').text('Attack');
+    //         $('.pickUp').addClass('attack');
+    //         $('.pickUp').removeClass('pickUp');
+    //     }
+    // }
 };
 
 var Potion = function() {
