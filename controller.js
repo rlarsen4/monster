@@ -1,80 +1,66 @@
-;var App = App || {};
-(function($) {
+var Controller = function() {
 
-    App.Controller = function(){
-        //
-        // ASK BRAD ABOUT DANIEL'S HACK HERE!!!
-        //
-        return {
+    this.currLocation = 1;
+    this.prevLocation = 1;
 
-        this.currLocation: aMap.currLocation,
-        this.prevLocation: aMap.prevLocation,
-
-
-        walkUp: function(){
-        
-            if (currLocation <= 5) {
-                currLocation = currLocation;
-            } else {
-                prevLocation = currLocation;
-                currLocation -= 5;
-            }        
-        },
-
-        walkDown: function() {
-            if (currLocation >= 21) {
-                currLocation = currLocation;
-            } else {
-                prevLocation = currLocation;
-                currLocation += 5;
-            }
-        },
-
-        walkLeft: function() {
-            if (currLocation == 1) {
-                currLocation = currLocation;
-            } else if (currLocation == 6) {
-                currLocation = currLocation;
-            } else if (currLocation == 11) {
-                currLocation = currLocation;
-            } else if (currLocation == 16) {
-                currLocation = currLocation;
-            } else if (currLocation == 21) {
-                currLocation = currLocation;
-            } else {
-                prevLocation = currLocation;
-                currLocation -= 1;
-            }
-        },
-
-        walkRight: function() {
-            if (currLocation == 5){
-                currLocation = currLocation;
-            } else if (currLocation == 10) {
-                currLocation = currLocation;
-            } else if (currLocation == 15) {
-                currLocation = currLocation;
-            } else if (currLocation == 20) {
-                currLocation = currLocation;
-            } else if (currLocation == 25) {
-                currLocation = currLocation;
-            } else {
-                prevLocation = currLocation;
-                currLocation += 1;
-            }
-        },
-
-        runAway: function() {
-            currLocation = prevLocation;
-        },
-
-        buttonClick: function () {
-            // console.log("button got pushed");
-            this.addClass('clicked');
+    this.walkUp = function(){
+        this.prevLocation = this.currLocation;
+        if (this.currLocation <= 5) {
+            this.currLocation = this.currLocation;
+        } else {
+            this.currLocation -= 5;
         }
-    }
+        console.log(this.prevLocation + " to " + this.currLocation);        
+    };
+
+    this.walkDown = function() {
+        this.prevLocation = this.currLocation;
+        if (this.currLocation >= 21) {
+            this.currLocation = this.currLocation;
+        } else {
+            this.currLocation += 5;
+        }
+        console.log(this.prevLocation + " to " + this.currLocation);        
+
+    };
+
+    this.walkLeft = function() {
+        this.prevLocation = this.currLocation;
+        if (this.currLocation == 1) {
+            this.currLocation = this.currLocation;
+        } else if (this.currLocation == 6) {
+            this.currLocation = this.currLocation;
+        } else if (this.currLocation == 11) {
+            this.currLocation = this.currLocation;
+        } else if (this.currLocation == 16) {
+            this.currLocation = this.currLocation;
+        } else if (this.currLocation == 21) {
+            this.currLocation = this.currLocation;
+        } else {
+            this.currLocation -= 1;
+        }
+        console.log(this.prevLocation + " to " + this.currLocation);        
+    };
+
+    this.walkRight = function() {
+        this.prevLocation = this.currLocation;
+        if (this.currLocation == 5){
+            this.currLocation = this.currLocation;
+        } else if (this.currLocation == 10) {
+            this.currLocation = this.currLocation;
+        } else if (this.currLocation == 15) {
+            this.currLocation = this.currLocation;
+        } else if (this.currLocation == 20) {
+            this.currLocation = this.currLocation;
+        } else if (this.currLocation == 25) {
+            this.currLocation = this.currLocation;
+        } else {
+            this.currLocation += 1;
+        }
+        console.log(this.prevLocation + " to " + this.currLocation);        
+
+    };
 }
-})(jQuery);
-// console.log(App.Controller);
-var aApp = new App.Controller;
-// console.log(aApp + "hi from Controller");
+
+
+

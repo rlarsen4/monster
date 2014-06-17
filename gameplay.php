@@ -14,13 +14,14 @@
         <!-- load the map on the left -->
         <div class="map"><?php include 'map.php'; ?> </div>
         <!-- load stats on the right -->
-        <div class="stats"><?php include 'stats.php'; ?> </div>
+        <div class="scoreboard"><?php include 'scoreboard.php'; ?> </div>
         <!-- load dialog in the middle -->
         <div class="gamedialog"><?php include 'gamedialog.php'; ?> </div>
     </div>
     <div class="gameover inactive"><?php include 'gameover.php'; ?></div>
 	<script src="jquery-1.11.1.min.js"></script>
    	<script src="denette.js"></script>
+    <script type="text/javascript" src="controller.js"></script>
 </body>
 </html>
 

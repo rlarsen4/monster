@@ -3,7 +3,7 @@
     <fieldset>
     <legend>Map</legend>
         <div class="row">
-            <div class="tile" id="1"></div>
+            <div class="tile activeTile" id="1"></div>
             <div class="tile" id="2"></div>
             <div class="tile" id="3"></div>
             <div class="tile" id="4"></div>
@@ -56,3 +56,6 @@
     </div>
     </fieldset>
 </div>
+
+<link rel="stylesheet" type="text/css" href="styles.css"> <!-- Take out during clean-up.-->
+<script type="text/javascript" controller.js></script>
