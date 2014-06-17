@@ -53,10 +53,7 @@ li {
 	opacity: 1;
 }
 
-.playerImageBox.selected {
-	background-color: orange;
-	transition: 2s;
-}
+
 
 .playerImageBox img {
 	float: left;
@@ -91,7 +88,17 @@ li {
 	display: none;
 }
 
+
+/****NEW STUFF*********/
+
+
+
 /* playerSelector styles*/
+.playerSelectorFieldset {
+	float: left;
+	min-width: 70%;
+	position: relative;
+}
 
 .playerSelectorButton {
 	display: inline-block;
@@ -102,15 +109,19 @@ li {
 	text-align: center;
 }
 
-.playerSelectorFieldset {
-	float: left;
-	min-width: 70%;
+.playerSelectorButton.selected {
+	background-color: orange;
+	transition: 1s;
 }
 
 .startGameButton {
+	display: none;
 	width: 100px;
 	padding: 10px;
 	float: right;
+	position: absolute;
+	bottom: 5px;
+	right: 5px;
 	background-color: #ccc;
 }
 
