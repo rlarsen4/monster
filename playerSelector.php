@@ -1,4 +1,3 @@
-<?php  ?>
 <link rel="stylesheet" type="text/css" href="styles.css">
 <div class="playerSelector">
     <fieldset class="playerSelectorFieldset"><legend>Choose Your Character:</legend>
@@ -6,7 +5,4 @@
 
     </fieldset>
 </div>
-<script type="text/javascript" src="jquery-1.11.1.min.js"></script>
-<script type="text/javascript" src="handlebars-v1.3.0.js"></script>
-<script type="text/javascript" src="playerSelector.js"></script>
-<script type="text/javascript" src="simpleDB.js"></script>
+<?php include(scriptLinks.php) ?>

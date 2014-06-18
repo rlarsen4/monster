@@ -27,12 +27,8 @@
     <!-- gameover page-->
     <div class="gameover inactive"><?php include('gameover.php'); ?></div>
 
-
-    <script src="jquery-1.11.1.min.js"></script>
-    <script type="text/javascript"></script>
-    <script type="text/javascript" src="main.js"></script>
-    <script type="text/javascript" src="gameover.js"></script>
-    <script type="text/javascript" src="player.js"></script>
+    <?php include('scriptLinks.php'); ?>
+    <?php include('jsonencode.php'); ?>
 
 </body>
 </html>

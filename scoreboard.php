@@ -1,4 +1,3 @@
-<?php  ?>
 <div class="scoreboard">
     <fieldset><legend>Stats</legend>
         <fieldset><legend>Quick Start Rules</legend>
@@ -35,3 +34,4 @@
         </div>
     </fieldset>
 </div>
+<?php include(scriptLinks.php) ?>

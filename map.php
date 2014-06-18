@@ -1,4 +1,3 @@
-<?php  ?>
 <div class="map">
     <fieldset>
     <legend>Map</legend>
@@ -58,4 +57,4 @@
 </div>
 
 <link rel="stylesheet" type="text/css" href="styles.css"> <!-- Take out during clean-up.-->
-<script type="text/javascript" controller.js></script>
+<?php include(scriptLinks.php) ?>
