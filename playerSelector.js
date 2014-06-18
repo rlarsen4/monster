@@ -31,6 +31,7 @@ $(function() {
         $('.startGameButton').show();
 
         var chosenPlayerId = this.id;
+        console.log(chosenPlayerId);
 
         aPlayer = new Player(chosenPlayerId);
 
