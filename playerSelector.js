@@ -40,7 +40,7 @@ $(function() {
         $('.runAway').on("click", aPlayer.runAway);
         $('.pickUp').on("click", aPlayer.pickup);
 
-        console.log('You chose: '+chosenPlayerId);
+        console.log('You chose: '+ chosenPlayerId);
     };
 
 /*Button click to start game*/
