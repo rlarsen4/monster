@@ -14,7 +14,7 @@
     <div class="playerSelector"><?php include('playerSelector.php'); ?></div>
     
     <!-- load stats on the right -->
-    <div class="stats"><?php include('stats.php'); ?> </div>
+    <div class="stats"><?php include('scoreboard.php'); ?> </div>
     
     <!-- container for map & gamedialog-->
     <div class="gameplay inactive"> 
