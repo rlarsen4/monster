@@ -21,11 +21,11 @@ $(function() {
         this.attack = function () {
             
             var enemyStrength = 7;
-            console.log(enemyStrength);
-
+            
             var newAttack = d12.roll();
             if (newAttack === 0) {
                 newAttack += 1;
+                // $('gamePlay').text ("The" + aMonster.name + "has a strength of :" aMonster.level + "your attack was a :" + newAttack);
                 console.log(newAttack);
             }
             console.log("Your roll: " + newAttack);
@@ -33,6 +33,7 @@ $(function() {
             if (newAttack >= enemyStrength) {
                 aPlayer.score = parseInt(aPlayer.score) + 100;
                 console.log("you win. Your Score: " + aPlayer.score);
+                $('attack').addClass('inactive');
                 
             }
             else {
@@ -41,9 +42,11 @@ $(function() {
                 console.log("you missed");
                 console.log("Enemy's attack: " + enemyAttack);
                 aPlayer.health -= enemyAttack;
-                console.log("your score: " + aPlayer.score + ". Your health: " + aPlayer.health);
+                $('gamePlay').text("Your score: " + aPlayer.score + ". Your health: " + aPlayer.health);
+                $('attack').addClass('inactive');
                 if (aPlayer.health <= 0) {
                     aPlayer.health = 0;
+
                         console.log("Your Health: " + aPlayer.health);
                         alert("GAME OVER");
                     }
@@ -69,11 +72,17 @@ $(function() {
             
         // Player can pick up a potion
         this.pickup = function() {
+            if(aWeapon){
+                $('gamePlay').text("You have picked up the" + Aweapon.name);
 
+            } else {
                 this.health = this.health + 5;
-            } 
+                $('gamePlay').text("The potion you received increased your health");
+            }
         
     
+        }
+
     }
 
     var aPlayer = new Player(1);
