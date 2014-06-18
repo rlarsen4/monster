@@ -9,7 +9,8 @@ var Scoreboard = function(player) {
 
     // methods
     this.drawScoreboard = function() {
-        $('.playerType').text(this.playerType);
+        console.log(aPlayer);
+        $('.playerType').text(aPlayer.playerType);
         $('.bio').text(this.bio);
         $('.weapon').text(this.weapon);
          $('.health').text(this.health);
