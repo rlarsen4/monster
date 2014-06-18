@@ -7,6 +7,7 @@
         this.weapon = [characterList[1][selectedPlayer].weapon];
         this.health = [characterList[1][selectedPlayer].health];
         this.score = [characterList[1][selectedPlayer].score];
+        this.image = [characterList[1]selectedPlayer].image];
         
         console.log(this.name);
         console.log (this.health);
@@ -86,17 +87,6 @@
         }
     }
 
-    var aPlayer = new Player(1);
+    var aPlayer;
 
-$(function() {
-
-    
-    // return aPlayer;
-    
-    
-    $('.attack').on("click", aPlayer.attack);
-    $('.runAway').on("click", aPlayer.runAway);
-    $('.pickUp').on("click", aPlayer.pickup);
-
-});
      
