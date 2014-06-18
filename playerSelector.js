@@ -31,6 +31,7 @@ $(function() {
         $('.startGameButton').show();
 
         var chosenPlayerId = this.id;
+        console.log(chosenPlayerId);
 
         aPlayer = new Player(chosenPlayerId);
 
@@ -40,7 +41,7 @@ $(function() {
         $('.runAway').on("click", aPlayer.runAway);
         $('.pickUp').on("click", aPlayer.pickup);
 
-        console.log('You chose: '+chosenPlayerId);
+        console.log('You chose: '+ chosenPlayerId);
     };
 
 /*Button click to start game*/
