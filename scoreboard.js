@@ -29,6 +29,4 @@ var Scoreboard = function(player) {
 
 }
 
-var aScoreboard = new Scoreboard(1);
-
-aScoreboard.drawScoreboard();
+var aScoreboard;

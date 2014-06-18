@@ -2,8 +2,8 @@
 // Initial commit GA
 // Include Database Class
 include('db.php');
-
-
+?>
+<!--
 // this function expects a string containing the table name to retrieve
 // right now the database host, user, and database name are hardcoded.
 /*
@@ -17,9 +17,11 @@ username: monster
 password: rockit
 
 db name: monster
-*/
+*/ -->
+<div class="inactive">
+<?php 
 function getPhpArrayFromTable($table) {
-     echo "<br>Retrieve table: " . $table ."<br>";
+     // echo "<br>Retrieve table: " . $table ."<br>";
      $connection = new DB("localhost", "root", "","monster");
      $results = $connection->execute("SELECT * FROM " . $table);
 
@@ -32,11 +34,15 @@ function getPhpArrayFromTable($table) {
      return $newArray; //returns a php array. Each row is an assoc array.
 
 }
-
+?>
+</div>
+<!--
 // this function expects getPhpArrayFromTable's array, as a parameter & returns
 // a JSON encoded array. This function should be called from a 
 // php code block embedded in your javascript code block.
 // See below <script> inside the html.
+-->
+<?php
 function getJsonArray($phpArray) {
 
      return json_encode($phpArray);
@@ -63,6 +69,7 @@ $weapon_type = getPhpArrayFromTable("weapon_type");
         <title>json_encode</title>
    </head>
    <body>
+      <div class="flurf">
      <script type="text/javascript">
           // this method for embedding PHP in javascript is shown
           // in Brad's example on GitHub: PHP-Variables-to-JS on 06/05/14
@@ -77,8 +84,9 @@ $weapon_type = getPhpArrayFromTable("weapon_type");
           var monster = <?php echo getJsonArray($monster); ?>;
           var player = <?php echo getJsonArray($player); ?>;
           var weapon_type = <?php echo getJsonArray($weapon_type); ?>;
-         
+
      </script>
+     </div>
 
         
    </body>

@@ -22,7 +22,7 @@ class DB {
 		    die('Connection Error: ' . $link->connect_error);
 		}
 		else {
-			echo "Connected to ".$db_host . "<br>";
+			// echo "Connected to ".$db_host . "<br>";
 		}
 	} //end __construct
 
