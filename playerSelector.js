@@ -29,7 +29,7 @@ $(function() {
         $(this).addClass('selected');
         // Start button appears
         $('.startGameButton').show();
-      
+        // Make selPlayer to pass player info for gameplay 
         var selPlayer = this.id;
         return selPlayer;
 
@@ -38,7 +38,7 @@ $(function() {
 /*Button click to start game*/
     var startGame = function(){
         $('.playerSelector').addClass('inactive');
-        $('.scoreboard').removeClass('inactive');
+        $('.gameplay').removeClass('inactive');
         console.log('something was clicked');
     };
 
@@ -52,7 +52,7 @@ $(function() {
     $('.playerSelectorFieldset').on('click', '.playerSelectorButton', choosePlayer);
 
 
-        // var aPlayer = new Player(...pass in index #)
+    
 
 
 

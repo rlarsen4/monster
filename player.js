@@ -1,17 +1,17 @@
-$(function() {   
+   
 
     var Player = function(selectedPlayer){
         
-        this.name = [characterList[1][selectedPlayer].name],
-        this.bio = [characterList[1][selectedPlayer].bio],
-        this.weapon = [characterList[1][selectedPlayer].weapon],
-        this.health = [characterList[1][selectedPlayer].health],
-        this.score = [characterList[1][selectedPlayer].score]
+        this.name = [characterList[1][selectedPlayer].name];
+        this.bio = [characterList[1][selectedPlayer].bio];
+        this.weapon = [characterList[1][selectedPlayer].weapon];
+        this.health = [characterList[1][selectedPlayer].health];
+        this.score = [characterList[1][selectedPlayer].score];
         
         console.log(this.name);
         console.log (this.health);
         console.log(this.score);
-        console.log(aMonster);
+        // console.log(aMonster);
 
 
         // methods
@@ -21,8 +21,8 @@ $(function() {
         //Player decides to attack
         this.attack = function () {
             
-            var enemyStrength = aMap.aMonster;
-            console.log(enemyStrength);
+            // var enemyStrength = aMap.aMonster;
+            // console.log(enemyStrength);
             
             var newAttack = d12.roll();
             if (newAttack === 0) {
@@ -61,11 +61,11 @@ $(function() {
         this.runAway = function() {
             myRoll = d2.roll();
             if(myRoll === 0) {
-                aMap.currLocation = aMap.prevLocation;
+                // aMap.currLocation = aMap.prevLocation;
                 console.log('rolled a zero');
             }
             else {
-                aMap.currLocation = aMap.currLocation;
+                // aMap.currLocation = aMap.currLocation;
                 console.log('rolled a one');
 
             }
@@ -83,18 +83,20 @@ $(function() {
             }
         
     
-        };
-
+        }
+    }
 
     var aPlayer = new Player(1);
-    return aPlayer;
+
+$(function() {
+
+    
+    // return aPlayer;
     
     
     $('.attack').on("click", aPlayer.attack);
     $('.runAway').on("click", aPlayer.runAway);
     $('.pickUp').on("click", aPlayer.pickup);
-     
-
-
 
 });
+     
