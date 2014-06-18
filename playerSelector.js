@@ -1,11 +1,14 @@
 $(function() {
 
+/* Populates Home Page with Players*/
     var makeHomePage = function(){
         var listPlayers = characterList[1];
         var howManyHeroes = listPlayers.length;
 
         for (i = 0; i < howManyHeroes; i++) {
-            $('.playerSelectorFieldset').append("<div class='playerSelectorButton'>" 
+            $('.playerSelectorFieldset').append("<div class='playerSelectorButton' id='"
+                + i
+                + "'>"
                 + "<img src='image/"
                 + listPlayers[i].image
                 + "'><br>"
@@ -13,42 +16,43 @@ $(function() {
                 + "<br>" 
                 + listPlayers[i].bio
                 + "<br>" 
-                + listPlayers[i].weapon)
-                + '</div>';
+                + listPlayers[i].weapon
+                + '</div>');
             }
-        $('.playerSelectorFieldset').append("<div class='startGameButton'>Start Game?</div>");
-    }
+            $('.playerSelectorFieldset').append("<div class='startGameButton'>Start Game?</div>");
+    };
 
-
-
-
-
+/*Choose Player, Show Start Button*/
     var choosePlayer = function(){
-        // change background around the player that was chosen - css()
+        // change background around the player that was chosen 
         $('.selected').removeClass('selected');
         $(this).addClass('selected');
         // Start button appears
         $('.startGameButton').show();
-        // Clicked on player's bio appears in the Aside under the Directions
-        // $('.bioAside').show();
-        renderBio();
+      
+        var selPlayer = this.id;
+        return selPlayer;
+
     };
 
+/*Button click to start game*/
     var startGame = function(){
-        // Link to and open the gameplay.php
-        window.open('gameplay.php');
-        };
+        $('.playerSelector').addClass('inactive');
+        $('.scoreboard').removeClass('inactive');
+        console.log('something was clicked');
+    };
 
 
-    // Event Handlers
+// Event Handlers
 
     makeHomePage();
 
-    $('.playerSelectorButton').on("click", choosePlayer);
+    $('.playerSelectorFieldset').on('click', '.startGameButton', startGame);
 
-    $('.playerChoices').on("click", '.startButton', startGame);
+    $('.playerSelectorFieldset').on('click', '.playerSelectorButton', choosePlayer);
 
 
+        // var aPlayer = new Player(...pass in index #)
 
 
 
