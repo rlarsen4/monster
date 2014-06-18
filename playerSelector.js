@@ -27,6 +27,8 @@ $(function() {
         // change background around the player that was chosen 
         $('.selected').removeClass('selected');
         $(this).addClass('selected');
+        $('.playerStats').removeClass('inactive');
+
         // Start button appears
         $('.startGameButton').show();
 
@@ -34,6 +36,8 @@ $(function() {
         console.log(chosenPlayerId);
 
         aPlayer = new Player(chosenPlayerId);
+        console.log(aPlayer.name);
+        aScoreboard = new Scoreboard;
 
         // Attach Events
         // 

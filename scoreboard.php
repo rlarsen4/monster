@@ -11,7 +11,7 @@
             </div>
             <div class="hiddenRules"></div>
             </fieldset>
-        <div class="playerStats">
+        <div class="playerStats inactive">
             <fieldset><legend>Player</legend>
                 <div><span class ="playerImage"></span></div>
                 <div class="divider">---</div>
