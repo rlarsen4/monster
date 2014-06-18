@@ -261,6 +261,7 @@ fieldset {
 
 .scoreboard {
 	padding: 0;
+	width: 270px;
 }
 
 .controller {
@@ -336,11 +337,6 @@ fieldset {
 
 .runAway {
 	left: 300px;
-}
-
-.scoreboard {
-	margin-right: 20px;
-	min-width: 200px;
 }
 
 .scoreboard fieldset{
