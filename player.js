@@ -11,6 +11,7 @@ $(function() {
         console.log(this.name);
         console.log (this.health);
         console.log(this.score);
+        console.log(aMonster);
 
 
         // methods
@@ -20,7 +21,8 @@ $(function() {
         //Player decides to attack
         this.attack = function () {
             
-            var enemyStrength = 7;
+            var enemyStrength = aMap.aMonster;
+            console.log(enemyStrength);
             
             var newAttack = d12.roll();
             if (newAttack === 0) {
@@ -52,7 +54,7 @@ $(function() {
                     }
                 }     
             }        
-        }
+        };
 
         // Run Away was pushed
 
@@ -68,12 +70,12 @@ $(function() {
 
             }
             
-        }
+        };
             
         // Player can pick up a potion
         this.pickup = function() {
             if(aWeapon){
-                $('gamePlay').text("You have picked up the" + Aweapon.name);
+                $('gamePlay').text("You have picked up the" + aWeapon.name);
 
             } else {
                 this.health = this.health + 5;
@@ -81,12 +83,12 @@ $(function() {
             }
         
     
-        }
+        };
 
-    }
 
     var aPlayer = new Player(1);
-    console.log (aPlayer.name);
+    return aPlayer;
+    
     
     $('.attack').on("click", aPlayer.attack);
     $('.runAway').on("click", aPlayer.runAway);
@@ -95,4 +97,4 @@ $(function() {
 
 
 
-})
+});
