@@ -1,4 +1,3 @@
-<?php  ?>
 <link rel="stylesheet" href="styles.css">
 <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 <div class="controller">
@@ -22,3 +21,4 @@
     <div class="attack">Attack</div>
     <div class="runAway">Runaway</div>
 </div>
+<?php include(scriptLinks.php) ?>
