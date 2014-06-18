@@ -4,6 +4,8 @@ var aController = new Controller;
 var aMap = new MapObject;  
 var aWeapon = new Weapon;
 var aGame = new Game;
+// var aPlayer = new Player;
+var aScoreboard = new Scoreboard(2);
 
 var moveUp = function() {
     aController.walkUp();

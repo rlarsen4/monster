@@ -2,10 +2,10 @@ var MapObject = function() {
     this.getLocation = function(controllerData){
         var currLocationId = "#" + controllerData.currLocation;
         var prevLocationId = "#" + controllerData.prevLocation;
-        $(currLocationId).addClass('activeTile');
+        $(prevLocationId).addClass('visitedTile');
         $(currLocationId).removeClass('visitedTile');
         $(currLocationId).removeClass('goalTile');
-        $(prevLocationId).addClass('visitedTile');
+        $(currLocationId).addClass('activeTile');
 
     }
 
@@ -13,16 +13,16 @@ var MapObject = function() {
         var checkForMonsters = new Dice(5);
         if (checkForMonsters.roll() == 1) {
             aWeapon = new Weapon();
-            console.log(aWeapon.selectAWeapon());
+            aWeapon = aWeapon.selectAWeapon();
+            $('.gamePlay').text("You found one " + aWeapon + ". ");
             $('.attack').text('Pick Up');
             $('.attack').addClass('pickUp');
             $('.attack').removeClass('attack');
 
         } else {
             aMonster = new Monster();
-            aMonster.selectAMonster();
-            console.log(aMonster.selectAMonster());
-            aScoreboard.drawScoreboard();
+            aMonster = aMonster.selectAMonster();
+            $('.gamePlay').text("You encountered the " + aMonster.name + ". ");
             $('.pickUp').text('Attack');
             $('.pickUp').addClass('attack');
             $('.pickUp').removeClass('pickUp');
