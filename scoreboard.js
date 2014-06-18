@@ -6,10 +6,6 @@ var Scoreboard = function(player) {
     this.weapon = plyr.weapon;
     this.health = plyr.health;
     this.score = plyr.health;
-    this.monsterName = aMonster.currentMonster.name;
-    this.monsterBio = aMonster.currentMonster.bio;
-    this.monsterLevel = aMonster.currentMonster.level;
-    this.monsterWeapon = aMonster.currentMonster.weapon;
 
     // methods
     this.drawScoreboard = function() {
@@ -19,12 +15,22 @@ var Scoreboard = function(player) {
          $('.health').text(this.health);
         $('.score').text(this.score);
         // $('.weaponImage').attr('src', bowAndArrowThumbnail.png)
-        $('.monsterImage').text(aMonster.currentMonster.name);
+        $('.monsterImage').text(aMonster);
         $('.monsterName').text(aMonster.currentMonster.name);
         $('.monsterBio').text(aMonster.currentMonster.bio);
         $('.monsterLevel').text(aMonster.currentMonster.level);
         $('.monsterWeapon').text(aMonster.currentMonster.weapon);
     };
+
+    this.hideRules = function() {
+        $('.rules').addClass("inactive");
+        $('.hiddenRules').removeClass("inactive");
+    }
+
+    this.showRules = function() {
+        $('.hiddenRules').addClass("inactive");
+        $('.rules').removeClass("inactive");
+    }
 
 }
 
