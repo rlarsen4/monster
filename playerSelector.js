@@ -29,10 +29,18 @@ $(function() {
         $(this).addClass('selected');
         // Start button appears
         $('.startGameButton').show();
-        // Make selPlayer to pass player info for gameplay 
-        var selPlayer = this.id;
-        return selPlayer;
 
+        var chosenPlayerId = this.id;
+
+        aPlayer = new Player(chosenPlayerId);
+
+        // Attach Events
+        // 
+        $('.attack').on("click", aPlayer.attack);
+        $('.runAway').on("click", aPlayer.runAway);
+        $('.pickUp').on("click", aPlayer.pickup);
+
+        console.log('You chose: '+chosenPlayerId);
     };
 
 /*Button click to start game*/
