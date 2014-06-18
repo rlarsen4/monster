@@ -10,7 +10,6 @@ var Controller = function() {
         } else {
             this.currLocation -= 5;
         }
-        console.log(this.prevLocation + " to " + this.currLocation);        
     };
 
     this.walkDown = function() {
@@ -20,7 +19,6 @@ var Controller = function() {
         } else {
             this.currLocation += 5;
         }
-        console.log(this.prevLocation + " to " + this.currLocation);        
 
     };
 
@@ -39,7 +37,6 @@ var Controller = function() {
         } else {
             this.currLocation -= 1;
         }
-        console.log(this.prevLocation + " to " + this.currLocation);        
     };
 
     this.walkRight = function() {
@@ -57,8 +54,6 @@ var Controller = function() {
         } else {
             this.currLocation += 1;
         }
-        console.log(this.prevLocation + " to " + this.currLocation);        
-
     };
 }
 
