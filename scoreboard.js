@@ -3,8 +3,7 @@ var Scoreboard = function(player) {
 
     // methods
     this.drawScoreboard = function() {
-        console.log(aPlayer.name);
-        $('.playerImage').append('<img src="'  '">'); 
+        console.log(aPlayer); 
         $('.playerType').text(aPlayer.name);
         $('.bio').text(aPlayer.bio);
         $('.weapon').text(aPlayer.weapon);

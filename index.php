@@ -30,7 +30,6 @@
 
     <script src="jquery-1.11.1.min.js"></script>
     <script type="text/javascript"></script>
-   	<script src="denette.js"></script>
     <script type="text/javascript" src="main.js"></script>
     <script type="text/javascript" src="gameover.js"></script>
     <script type="text/javascript" src="player.js"></script>
