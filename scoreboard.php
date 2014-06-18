@@ -14,14 +14,13 @@
             </fieldset>
         <div class="playerStats">
             <fieldset><legend>Player</legend>
-                <div><span class ="playerImage"><img alt="You"> </span></div>
+                <div><span class ="playerImage"></span></div>
                 <div class="divider">---</div>
                 <div>Player Type: <span class ="playerType"></span></div>
                 <div>Player Bio: <span class="bio"></span></div>
                 <div class="health inactive">Player Health: <span class="healthSpan"></span></div>
                 <div class="score inactive">Player Score: <span class="score inactive"></span></div>
                 <div>Current Weapon: <span class="weapon"></span></div>
-                <div>Weapon Description: <span class="weaponDesc"></span></div>
                 <div class="divider">---</div>
                 <div><span class="weaponImage"><img src="image/bowAndArrowThumbnail.png" alt="Your weapon"> </span></div>
             </fieldset>

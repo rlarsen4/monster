@@ -1,26 +1,21 @@
 var Scoreboard = function(player) {
     // properties
-    var plyr = characterList[1][player];
-    this.playerType = plyr.name;
-    this.bio = plyr.bio;
-    this.weapon = plyr.weapon;
-    this.health = plyr.health;
-    this.score = plyr.health;
 
     // methods
     this.drawScoreboard = function() {
-        console.log(aPlayer);
-        $('.playerType').text(aPlayer.playerType);
-        $('.bio').text(this.bio);
-        $('.weapon').text(this.weapon);
-         $('.health').text(this.health);
-        $('.score').text(this.score);
+        console.log(aPlayer.name);
+        $('.playerImage').append('<img src="'  '">'); 
+        $('.playerType').text(aPlayer.name);
+        $('.bio').text(aPlayer.bio);
+        $('.weapon').text(aPlayer.weapon);
+        $('.health').text(aPlayer.health);
+        $('.score').text(aPlayer.score);
         // $('.weaponImage').attr('src', bowAndArrowThumbnail.png)
-        $('.monsterImage').text(aMonster);
-        $('.monsterName').text(aMonster.currentMonster.name);
-        $('.monsterBio').text(aMonster.currentMonster.bio);
-        $('.monsterLevel').text(aMonster.currentMonster.level);
-        $('.monsterWeapon').text(aMonster.currentMonster.weapon);
+        // $('.monsterImage').append(aMonster);
+            // $('.monsterName').text(aMonster.currentMonster.name);
+            // $('.monsterBio').text(aMonster.currentMonster.bio);
+            // $('.monsterLevel').text(aMonster.currentMonster.level);
+            // $('.monsterWeapon').text(aMonster.currentMonster.weapon);
     };
 
     this.hideRules = function() {
