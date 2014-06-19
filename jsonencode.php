@@ -21,7 +21,7 @@ db name: monster
 <div class="inactive">
 <?php 
 function getPhpArrayFromTable($table) {
-     // echo "<br>Retrieve table: " . $table ."<br>";
+     // echo "string"; "<br>Retrieve table: " . $table ."<br>";
      $connection = new DB("localhost", "root", "","monster");
      $results = $connection->execute("SELECT * FROM " . $table);
 
@@ -69,24 +69,23 @@ $weapon_type = getPhpArrayFromTable("weapon_type");
         <title>json_encode</title>
    </head>
    <body>
-      <div class="flurf">
      <script type="text/javascript">
           // this method for embedding PHP in javascript is shown
           // in Brad's example on GitHub: PHP-Variables-to-JS on 06/05/14
           //Example output from debugger:
           // var character_type = [{"char_type_id":"1","type":"0"},{"char_type_id":"2","type":"1"}];
-          var weapons = <?php echo getJsonArray($weapons); ?>;
+          var weapons = <?php echo  getJsonArray($weapons); ?>;
           //for (var row in weapons) {
           //     console.log(weapons[row]);
           //}
           var character = <?php echo getJsonArray($character); ?>;
-          var character_type = <?php echo getJsonArray($character_type); ?>;
+          var character_type = <?php echo  getJsonArray($character_type); ?>;
           var monster = <?php echo getJsonArray($monster); ?>;
           var player = <?php echo getJsonArray($player); ?>;
           var weapon_type = <?php echo getJsonArray($weapon_type); ?>;
 
      </script>
-     </div>
+
 
         
    </body>
