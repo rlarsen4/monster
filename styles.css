@@ -311,7 +311,7 @@ fieldset {
 	border-bottom-right-radius: 5px;
 }
 
-.up, .left, .right, .down, .center, .attack, .pickUp, .runAway {
+.up, .left, .right, .down, .center, .attack, .pickUp, .runAway, .quit{
 	border-right: 2px solid #ccc;
 	border-bottom: 2px solid #ccc;
 	color: #fff;
@@ -321,7 +321,7 @@ fieldset {
 	border-top: 2px solid #ccc;
 	border-left: 2px solid #ccc;
 }
-.attack, .runAway, .pickUp {
+.attack, .runAway, .pickUp, .quit {
 	background-color: #777;
 	display: inline-block;
 	border-radius: 5px;
@@ -332,11 +332,15 @@ fieldset {
 }
 
 .attack .pickUp {
-	left: 200px;
+	left: 250px;
 }
 
 .runAway {
 	left: 300px;
+}
+
+.quit {
+	left: 400px;
 }
 
 .scoreboard fieldset{

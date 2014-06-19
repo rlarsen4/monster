@@ -4,6 +4,7 @@ var aController = new Controller;
 var aMap = new MapObject;  
 var aWeapon = new Weapon;
 var aGame = new Game;
+var aScoreboard = new Scoreboard;
 
 var moveUp = function() {
     aController.walkUp();
@@ -56,6 +57,7 @@ $('.right').on('click', moveRight);
 // $('.runAway').on('click', aController.getLocation);
 $('.replay').on('click', aGame.playAgain );
 $(document).keydown(keyGotPusheded);
-// $('.rules').on('click', aScoreboard.hideRules);
-// $('.hiddenRules').on('click', aScoreboard.showRules);
+// $('.quit').on('click', gameover);
+$('.rules').on('click', aScoreboard.hideRules);
+$('.hiddenRules').on('click', aScoreboard.showRules);
 });
