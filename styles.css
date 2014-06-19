@@ -6,7 +6,7 @@
 
 
 body {
-	width: 100%;
+	min-width: 1300px;
 	margin: auto;
 }
 
@@ -72,8 +72,16 @@ li {
 }
 
 /** Game Play **/
+
+.mapContainer {
+	background-color: yellow;
+	padding: 5px;
+	margin-left: 5px;
+	margin-right: 30px;
+}
+
 .map, .legend {
-	margin: 15px;
+	/*margin-r: 15px;*/
 	float: left;
 	width: 200px;
 	padding: 5px;
@@ -239,13 +247,14 @@ legend {
 	max-width: 60%;
 	margin: auto;
 	text-align: center;
-	margin-top: 250px;
+	margin-top: 175px;
 	z-index: 500;
 	padding: 10px;
 }
 
 .replay {
 	background-color: #ccc;
+	color: #fff;
 	margin: auto;
 	padding: 10px;
 	width: 200px;
