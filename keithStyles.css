@@ -29,12 +29,22 @@
     background-color: #000;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;    
-    width: 300px;    
+    width: 200px;    
     float: left;
-    padding: 5px;
+    spadding: 5px;
     margin: 10px;
     overflow: hidden;
-    height: 220px;
+    height: 210px;
+}
+
+.monster {
+    background-color: #000;
+    float:left;
+    padding: 5px;
+    margin: 10px;
+    height:210px;
+    width:320px;
+    overflow: hidden;
 }
 
 .monsterImg {
@@ -52,7 +62,7 @@
 
 #elf {
     margin-top: 10px;
-    height: 120px;
+    height: 80px;
     width: 80px;
     
 }
@@ -71,12 +81,12 @@
     background-color: #000;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    padding: 5px;
+    spadding: 5px;
     margin: 10px;
     overflow: hidden;
     float: right;
-    width: 300px;
-    height: 220px;
+    width: 200px;
+    height: 210px;
     
 }
 
@@ -95,7 +105,7 @@
 
 #sword {
     margin-top: 10px;
-    max-height: 100px;
+    max-height: 80px;
 }
 
 .weaponName {
