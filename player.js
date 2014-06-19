@@ -12,7 +12,7 @@
         console.log(this.name);
         console.log (this.health);
         console.log(this.score);
-        console.log(aMonster);
+        // console.log(aMonster);
 
 
         // methods

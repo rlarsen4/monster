@@ -22,7 +22,7 @@ db name: monster
 <?php 
 function getPhpArrayFromTable($table) {
      // echo "string"; "<br>Retrieve table: " . $table ."<br>";
-     $connection = new DB("localhost", "root", "","monster");
+     $connection = new DB("localhost", "root", "rockit","monster");
      $results = $connection->execute("SELECT * FROM " . $table);
 
      $newArray = array();
