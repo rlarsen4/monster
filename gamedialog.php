@@ -13,11 +13,9 @@
         <div class="dialog">
             <div class="monsterContainer">
                 <div class="monsterImg">
-                    <img src="image/elf.png" id="monsterPic">
-                    
+                                        
                 </div>
-                <div class="monsterDesc"><h1>
-                Elf</h1>
+                <div class="monsterDesc">
 
 
                 </div>
@@ -29,12 +27,10 @@
             </div>
             <div class="weaponContainer">
                 <div class="weaponImg">
-                    <img src="image/bowAndArrow.png" id="weaponPic">
+                    
                     
                 </div>
-                <div class="weaponName"><h2>
-                Monster Weapon</h2>
-
+                <div class="weaponName">
 
                 </div>
                 

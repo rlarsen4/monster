@@ -9,13 +9,16 @@ var Scoreboard = function(player) {
         $('.weapon').text(aPlayer.weapon);
         $('.health').text(aPlayer.health);
         $('.score').text(aPlayer.score);
-        // $('.weaponImage').attr('src', bowAndArrowThumbnail.png)
+        // $('.weaponImage').html('<img id="weaponPic" src="image/'+ aWeapon + '.png" />');
         // $('.monsterImage').append(aMonster);
             // $('.monsterName').text(aMonster.currentMonster.name);
             // $('.monsterBio').text(aMonster.currentMonster.bio);
             // $('.monsterLevel').text(aMonster.currentMonster.level);
             // $('.monsterWeapon').text(aMonster.currentMonster.weapon);
     };
+            
+            
+    
 
     this.hideRules = function() {
         $('.rules').addClass("inactive");
