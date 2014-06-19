@@ -22,7 +22,7 @@
         //Player decides to attack
         this.attack = function () {
             
-            // var enemyStrength = aMap.aMonster;
+            var enemyStrength = 6;
             // console.log(enemyStrength);
             
             var newAttack = d12.roll();
@@ -45,7 +45,7 @@
                 console.log("you missed");
                 console.log("Enemy's attack: " + enemyAttack);
                 aPlayer.health -= enemyAttack;
-                $('gamePlay').text("Your score: " + aPlayer.score + ". Your health: " + aPlayer.health);
+                $('gamePlay').text("Your score: " + aPlayer.score + " Your health: " + aPlayer.health);
                 $('attack').addClass('inactive');
                 if (aPlayer.health <= 0) {
                     aPlayer.health = 0;
@@ -77,7 +77,7 @@
         this.pickup = function() {
             if(aWeapon){
                 $('gamePlay').text("You have picked up the" + aWeapon.name);
-                $('.weaponImage').html('<img id="weaponPic" src="image/'+ aWeapon + '.png" />');
+                // $('.weaponImage').html('<img id="weaponPic" src="image/'+ aWeapon + '.png" />');
 
 
             } else {

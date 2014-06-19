@@ -28,7 +28,7 @@ var MapObject = function() {
             var aMonster = new Monster();
             aMonster = aMonster.selectAMonster();
             $('.gamePlay').text("You encountered the " + aMonster.name + ". ");
-            $('.monsterImg').html('<img id="monsterImg" src="image/'+ aMonster.image + '.png" />');
+            $('.monsterImg').html("<img id='monsterImg' src='aMonster.image' />");
             $('.monsterDesc').html('<h2>'+ aMonster.name +'</h2>');
             // $('.weaponImg').html('<img id="weaponPic" src="image/'+ aMonster.weapon + '.png" />');
             // $('.weaponName').html('<h2>'+ aMonster.weapon +'</h2>');
