@@ -1,8 +1,8 @@
 -- MySQL dump 10.13  Distrib 5.6.17, for osx10.7 (x86_64)
 --
--- Host: localhost    Database: monster
+-- Host: rockit.ccyd2ljjwzet.us-east-1.rds.amazonaws.com    Database: monster
 -- ------------------------------------------------------
--- Server version	5.6.17
+-- Server version	5.6.13
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -39,7 +39,7 @@ CREATE TABLE `character` (
 
 LOCK TABLES `character` WRITE;
 /*!40000 ALTER TABLE `character` DISABLE KEYS */;
-INSERT INTO `character` VALUES (7,0,'Amazon','',20,''),(10,0,'Elf','',21,''),(11,0,'Human','',22,''),(12,0,'Knight','',23,''),(13,0,'Wizard','',26,''),(14,0,'T-Rex','',25,''),(15,1,'Ogre','',2,''),(16,1,'Vampire','',11,''),(17,1,'Swampman','',12,''),(18,1,'Lizardman','',13,''),(19,1,'Scorpion','',14,''),(20,1,'GiantSpider','',15,''),(21,1,'Skeleton','',16,''),(22,1,'Werewolf','',17,''),(23,1,'Witch','',18,'');
+INSERT INTO `character` VALUES (7,0,'Amazon','',20,'amazon.png'),(10,0,'Elf','',21,'elf.png'),(11,0,'Human','',22,'human.png'),(12,0,'Knight','',23,'knight.png'),(13,0,'Wizard','',26,'wizard.png'),(14,0,'T-Rex','',25,'t-rex.png'),(15,1,'Ogre','',2,'ogre.png'),(16,1,'Vampire','',11,'vampire.png'),(17,1,'Swampman','',12,'swampman.png'),(18,1,'Lizardman','',13,'lizardman.png'),(19,1,'Scorpion','',14,'scorpion.png'),(20,1,'GiantSpider','',15,'giantspider.png'),(21,1,'Skeleton','',16,'skeleton.png'),(22,1,'Werewolf','',17,'wolfman.png'),(23,1,'Witch','',18,'witch.png');
 /*!40000 ALTER TABLE `character` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -161,7 +161,7 @@ CREATE TABLE `weapons` (
 
 LOCK TABLES `weapons` WRITE;
 /*!40000 ALTER TABLE `weapons` DISABLE KEYS */;
-INSERT INTO `weapons` VALUES (2,'club','images/club1.jpg'),(11,'sleep_spell',''),(12,'slime',''),(13,'tail',''),(14,'neuro_poison',''),(15,'blood_poison',''),(16,'bone',''),(17,'claws',''),(18,'broom',''),(19,'potion',''),(20,'whip',''),(21,'bow_and_arrow',''),(22,'iphone',''),(23,'sword',''),(24,'lightning_bolt',''),(25,'dentures','');
+INSERT INTO `weapons` VALUES (2,'club','club.png'),(11,'sleep_spell','sleep-spell.png'),(12,'slime','slime.png'),(13,'tail','tail.png'),(14,'neuro_poison','neuro-poison.png'),(15,'blood_poison','blood-poison.png'),(16,'bone','bone.png'),(17,'claws','claws.png'),(18,'broom','broom.png'),(19,'potion','potion.png'),(20,'whip','whip.png'),(21,'bow_and_arrow','bow_and_Arrow.png'),(22,'iphone','iphone.png'),(23,'sword','sword.png'),(24,'lightning_bolt','lightning_bolt.png'),(25,'dentures','dentures.png');
 /*!40000 ALTER TABLE `weapons` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -174,4 +174,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2014-06-16 17:26:02
+-- Dump completed on 2014-06-19 13:25:41
