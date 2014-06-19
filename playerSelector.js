@@ -13,11 +13,7 @@ $(function() {
                 + listPlayers[i].image
                 + "'><br>"
                 + listPlayers[i].name
-                + "<br>" 
-                + listPlayers[i].bio
-                + "<br>" 
-                + listPlayers[i].weapon
-                + '</div>');
+                + "<br></div>");
             }
             $('.playerSelectorFieldset').append("<div class='startGameButton'>Start Game?</div>");
     };

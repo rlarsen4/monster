@@ -1,7 +1,7 @@
 var characterList = [
 //index 0 = weapon type
 weaponType = [
-    "club, sleep_spell, slime, tail, neuro_poison, blood_poison, bone, claws, broom, potion, whip, bow_and_arrow, iphone, sword, lightning_bolt, dentures"
+    "potion, club, sleep_spell, slime, tail, neuro_poison, blood_poison, bone, claws, broom, potion, whip, bow_and_arrow, iphone, sword, lightning_bolt, dentures"
 ],
 
 //index 1 = player
@@ -26,7 +26,7 @@ players = [
 
     playerC = {
         image: "human.png",
-        name: "human",
+        name: "Human",
         bio: "Pascal's triangle, you guys. Pascal's triangle.",
         weapon: weaponType[1],
         health: 100,
@@ -66,7 +66,7 @@ players = [
 monster = [
         monsterA = {
             name: "Ogre",
-            image: "ogre.png",
+            image: "image/ogre.png",
             bio: "Ogres are like onions",
             level: 7,
             weapon: weaponType[1]
@@ -74,7 +74,7 @@ monster = [
 
         monsterB = {
             name: "Vampire",
-            image: "vampire.png",
+            image: "image/vampire.png",
             bio: "I'm a vampire, I hate garlic.",
             level: 6,
             weapon: weaponType[0] 
@@ -82,7 +82,7 @@ monster = [
 
         monsterC = {
             name: "Swamp Man",
-            image: "swampman.png",
+            image: "image/swampman.png",
             bio: "Me Smell Funny.",
             level: 6,
             weapon: weaponType[0] 
@@ -90,7 +90,7 @@ monster = [
 
         monsterD = {
             name: "Lizard Man",
-            image: "swampman.png",
+            image: "image/swampman.png",
             bio: "I'm a cold-blooded killer, but a hot-blooded lover.",
             level: 6,
             weapon: weaponType[0] 
@@ -98,7 +98,7 @@ monster = [
 
         monsterE = {
             name: "Giant Spider",
-            image: "giantspider.png",
+            image: "image/giantspider.png",
             bio: "Step into my parlor, my precious little fly...",
             level: 6,
             weapon: weaponType[0] 
@@ -106,7 +106,7 @@ monster = [
 
         monsterF = {
             name: "Supermodel",
-            image: "skeleton.png",
+            image: "image/skeleton.png",
             bio: "Sticks and stones may break my bones, so watch out, willya?",
             level: 6,
             weapon: weaponType[0] 
@@ -114,7 +114,7 @@ monster = [
 
         monsterG = {
             name: "Werewolf",
-            image: "werewolf.png",
+            image: "image/werewolf.png",
             bio: "Howling at the moon.",
             level: 6,
             weapon: weaponType[0] 
@@ -123,7 +123,7 @@ monster = [
 
         monsterC = {
             name: "Witch",
-            image: "witch.png",
+            image: "image/witch.png",
             bio: "ouble, double toil and trouble; Fire burn, and cauldron bubble.",
             level: 6,
             weapon: weaponType[0] 
