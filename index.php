@@ -28,7 +28,7 @@
     <div class="gameover inactive"><?php include('gameover.php'); ?></div>
 
     <?php include('scriptLinks.php'); ?>
-    <?php include('jsonencode.php'); ?>
+    <?php //include('jsonencode.php'); ?>
 
 </body>
 </html>
