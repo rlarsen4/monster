@@ -6,7 +6,8 @@
                     <li>Choose a player you want to be</li>
                     <li>Click the Start button</li>
                     <li>The Game board opens for you</li>
-                    <li>Use the Up/ Down/ Side arrows to move around the board</li>                        <li>Fight monsters, get rewards, get points and figure it out. That's all the information you get.</li>
+                    <li>Use the Up/ Down/ Side arrows to move around the board</li>                        
+                    <li>Fight monsters, get rewards, get points and figure it out. That's all the information you get.</li>
                 </ol>
             </div>
             <div class="hiddenRules inactive"></div>

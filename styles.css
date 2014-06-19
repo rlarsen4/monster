@@ -32,67 +32,6 @@ li {
     margin-left: 30px;
 }
 
-.playerChoices fieldset {
-	background-color: #EDEDED;
-	padding: 10px;
-	margin: 0 300px 15px 15px;
-	overflow: hidden;
-}
-
-.playerImageBox {
-	display: inline-block;
-	margin: 20px;
-	background-color: #B2B2B2;	
-	height: 175px;
-	width: 150px;
-	opacity: 0.8; 
-}
-
-.playerImageBox:hover {
-	box-shadow: 0 0 10px #ccc;
-	opacity: 1;
-}
-
-
-
-.playerImageBox img {
-	float: left;
-	height: 150px;
-	width: 100px;
-}
-.playerImageBox h3 {
-	margin-left: 110px;
-}
-
-.startButton {
-	display: none;
-}
-
-.homePageAside {
-	float: right;
-	width: 400px;
-	height: 600px;
-	margin: 0px 20px;
-	border: 1px;
-	padding: 3px;
-	background-color: #14FA61;
-	font-size: 20px;
-}
-
-.homePageAside fieldset {
-	padding: 10px;
-	margin: 10px;
-}
-
-.bioAside {
-	display: none;
-}
-
-
-/****NEW STUFF*********/
-
-
-
 /* playerSelector styles*/
 .playerSelectorFieldset {
 	float: left;
@@ -125,78 +64,7 @@ li {
 	background-color: #ccc;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/** Game Play **/
 .map, .legend {
 	margin: 15px;
 	float: left;
@@ -381,3 +249,65 @@ legend {
 	display: none;
 	background-color: red;	
 }
+
+
+
+
+/********THINK THIS IS OLD CSS FROM DENETTE THAT NEEDS TO BE DELETED. 
+Is commented out to see if we need it anymore
+
+.playerChoices fieldset {
+	background-color: #EDEDED;
+	padding: 10px;
+	margin: 0 300px 15px 15px;
+	overflow: hidden;
+}
+
+.playerImageBox {
+	display: inline-block;
+	margin: 20px;
+	background-color: #B2B2B2;	
+	height: 175px;
+	width: 150px;
+	opacity: 0.8; 
+}
+
+.playerImageBox:hover {
+	box-shadow: 0 0 10px #ccc;
+	opacity: 1;
+}
+
+
+
+.playerImageBox img {
+	float: left;
+	height: 150px;
+	width: 100px;
+}
+.playerImageBox h3 {
+	margin-left: 110px;
+}
+
+.startButton {
+	display: none;
+}
+
+.homePageAside {
+	float: right;
+	width: 400px;
+	height: 600px;
+	margin: 0px 20px;
+	border: 1px;
+	padding: 3px;
+	background-color: #14FA61;
+	font-size: 20px;
+}
+
+.homePageAside fieldset {
+	padding: 10px;
+	margin: 10px;
+}
+
+.bioAside {
+	display: none;
+}*/
