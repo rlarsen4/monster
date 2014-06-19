@@ -1,3 +1,4 @@
+
 var gameover = function() {
     $('.gameplay').addClass('inactive');
     $('.stats').addClass('inactive');
@@ -7,14 +8,12 @@ var gameover = function() {
 //             $('.finalScore').text(aScoreboard.getScore());
 //         },   
 
-        // playAgain: function() {
-        //     gamedata = {};
-        //     $('.playerSelector').removeClass('inactive');
-        //     $('.stats').removeClass('inactive');
-        //     $('.gameplay').addClass('inactive');
-        //     $('.gameover').addClass('inactive');           
-        // }
-    }
-})(jQuery);
+var replay = function() {
+    gamedata = {};
+        $('.playerSelector').removeClass('inactive');
+        $('.stats').removeClass('inactive');
+        $('.gameplay').addClass('inactive');
+        $('.gameover').addClass('inactive');           
+}
 
-var aGameover = new App.GameOver;
+

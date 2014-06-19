@@ -57,7 +57,8 @@ $('.right').on('click', moveRight);
 // $('.runAway').on('click', aController.getLocation);
 $('.replay').on('click', aGame.playAgain );
 $(document).keydown(keyGotPusheded);
-// $('.quit').on('click', gameover);
+$('.quit').on('click', gameover);
+$('.replay').on('click', replay)
 $('.rules').on('click', aScoreboard.hideRules);
 $('.hiddenRules').on('click', aScoreboard.showRules);
 });

@@ -9,7 +9,7 @@
                     <li>Use the Up/ Down/ Side arrows to move around the board</li>                        <li>Fight monsters, get rewards, get points and figure it out. That's all the information you get.</li>
                 </ol>
             </div>
-            <div class="hiddenRules"></div>
+            <div class="hiddenRules inactive"></div>
             </fieldset>
         <div class="playerStats inactive">
             <fieldset><legend>Player</legend>

@@ -13,3 +13,4 @@
     <script type="text/javascript" src="player.js"></script>
     <script type="text/javascript" src="monster.js"></script>
     <script type="text/javascript" src="scoreboard.js"></script>
+    <script type="text/javascript" src="gameover.js"></script>
