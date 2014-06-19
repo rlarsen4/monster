@@ -22,6 +22,10 @@
 
                 </div>
             </div>
+            <div class="monster">
+                <div class="monsterBio">              
+                </div>                
+            </div>
             <div class="weaponContainer">
                 <div class="weaponImg">
                     <img src="image/bowAndArrow.png" id="sword">
