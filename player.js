@@ -77,6 +77,8 @@
         this.pickup = function() {
             if(aWeapon){
                 $('gamePlay').text("You have picked up the" + aWeapon.name);
+                $('.weaponImage').html('<img id="weaponPic" src="image/'+ aWeapon + '.png" />');
+
 
             } else {
                 this.health = this.health + 5;

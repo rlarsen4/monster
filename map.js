@@ -18,8 +18,6 @@ var MapObject = function() {
             aWeapon = aWeapon.selectAWeapon();
             
             $('.gamePlay').text("You found one " + aWeapon + ". ");
-            // $('.weaponImg').html('<img id="weaponPic" src="image/'+ aWeapon + '.png" />');
-            // $('.weaponName').html('<h2>'+ aWeapon +'</h2>');
             $('.attack').text('Pick Up');
             $('.attack').addClass('pickUp');
             $('.pickUp').removeClass('inactive');
@@ -32,6 +30,8 @@ var MapObject = function() {
             $('.gamePlay').text("You encountered the " + aMonster.name + ". ");
             $('.monsterImg').html('<img id="monsterImg" src="image/'+ aMonster.image + '.png" />');
             $('.monsterDesc').html('<h2>'+ aMonster.name +'</h2>');
+            // $('.weaponImg').html('<img id="weaponPic" src="image/'+ aMonster.weapon + '.png" />');
+            // $('.weaponName').html('<h2>'+ aMonster.weapon +'</h2>');
             $('.pickUp').text('Attack');
             $('.pickUp').addClass('attack');
             $('.pickUp').removeClass('inactive');
