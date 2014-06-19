@@ -4,6 +4,7 @@
    box-sizing: border-box;
 }
 
+
 body {
 	width: 100%;
 	margin: auto;
@@ -33,6 +34,12 @@ li {
 }
 
 /* playerSelector styles*/
+
+.playerSelector {
+	width: 600px;
+	margin-left: 75px;
+}
+
 .playerSelectorFieldset {
 	float: left;
 	min-width: 70%;
