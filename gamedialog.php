@@ -13,7 +13,7 @@
         <div class="dialog">
             <div class="monsterContainer">
                 <div class="monsterImg">
-                    <img src="image/elf.png" id="elf">
+                    <img src="image/elf.png" id="monsterPic">
                     
                 </div>
                 <div class="monsterDesc"><h1>
@@ -23,12 +23,13 @@
                 </div>
             </div>
             <div class="monster">
-                <div class="monsterBio">              
+                <div class="monsterBio"> 
+
                 </div>                
             </div>
             <div class="weaponContainer">
                 <div class="weaponImg">
-                    <img src="image/bowAndArrow.png" id="sword">
+                    <img src="image/bowAndArrow.png" id="weaponPic">
                     
                 </div>
                 <div class="weaponName"><h2>

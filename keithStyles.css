@@ -47,6 +47,19 @@
     overflow: hidden;
 }
 
+.monsterBio {
+    background-color: lime;
+    float:left;
+    font-family: 'Press Start 2P', cursive;
+    color: #000;
+    text-align: center;
+    padding: 5px;
+    margin: 10px;
+    height:180px;
+    width:290px;
+    overflow: hidden;
+}
+
 .monsterImg {
     /*background-color: yellow;*/
     border-top-left-radius: 20px;
@@ -60,7 +73,7 @@
     height: 140px;   
 }
 
-#elf {
+#monsterPic {
     margin-top: 10px;
     height: 80px;
     width: 80px;
@@ -103,7 +116,7 @@
     text-align: center;
 }
 
-#sword {
+#weaponPic {
     margin-top: 10px;
     max-height: 80px;
 }
