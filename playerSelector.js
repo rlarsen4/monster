@@ -15,7 +15,7 @@ $(function() {
                 + listPlayers[i].name
                 + "<br></div>");
             }
-            $('.playerSelectorFieldset').append("<div class='startGameButton'>Start Game?</div>");
+            $('.playerSelectorFieldset').append("<div class='startGameButton'>Start Game</div>");
     };
 
 /*Choose Player, Show Start Button*/
