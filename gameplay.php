@@ -19,7 +19,7 @@
         <div class="gamedialog"><?php include 'gamedialog.php'; ?> </div>
     </div>
     <div class="gameover inactive"><?php include 'gameover.php'; ?></div>
-	<?php include(scriptLinks.php) ?>
+	<?php include("scriptLinks.php") ?>
 </body>
 </html>
 

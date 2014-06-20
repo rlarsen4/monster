@@ -35,4 +35,4 @@
         </div>
     </fieldset>
 </div>
-<?php include(scriptLinks.php) ?>
+<?php include("scriptLinks.php") ?>
