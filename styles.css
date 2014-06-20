@@ -192,7 +192,6 @@ fieldset {
 
 .dpad {
 	background-color: #777;
-	text-align: center;
 	font-size: 3em;
 }
 
@@ -222,10 +221,23 @@ fieldset {
 	border-bottom-right-radius: 5px;
 }
 
-.up, .left, .right, .down, .center, .attack, .pickUp, .runAway, .quit{
+.button {
+	border-left: 2px solid #ccc;
+	border-top: 2px solid #ccc;
+	color: #fff;
+	text-align: center;
+}
+
+.button:active {
 	border-right: 2px solid #ccc;
 	border-bottom: 2px solid #ccc;
+	border-left: none;
+	border-top: none;
+}
+
+.center {
 	color: #fff;
+	text-align: center;
 }
 
 .directional .clicked {
@@ -242,8 +254,8 @@ fieldset {
 	top: 75px;
 }
 
-.attack .pickUp {
-	left: 250px;
+.attack, .pickUp  {
+	left: 200px;
 }
 
 .runAway {

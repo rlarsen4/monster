@@ -88,6 +88,7 @@
     margin-bottom: 5px;
     overflow: hidden;
     text-align: center;
+    min-height: 30px;
 }
 
 .weaponContainer {
@@ -129,6 +130,7 @@
     margin-bottom: 5px;
     overflow: hidden;
     text-align: center;
+    min-height: 30px;
 }
 
 .gamePlay {
