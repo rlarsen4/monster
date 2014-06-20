@@ -2,13 +2,14 @@ var Scoreboard = function(player) {
     // properties
 
     // methods
-    this.drawScoreboard = function() {
-        console.log(aPlayer); 
+    this.drawScoreboard = function() { 
+        $('.playerImage').html('<img src="image/' + aPlayer.image + '" />');
         $('.playerType').text(aPlayer.name);
         $('.bio').text(aPlayer.bio);
         $('.weapon').text(aPlayer.weapon);
-        $('.health').text(aPlayer.health);
-        $('.score').text(aPlayer.score);
+        $('.healthSpan').text(aPlayer.health);
+        $('.scoreSpan').text(aPlayer.score);
+        $('.weaponImage').html('<img src="image/' + aPlayer.weapon + '.png" />');
         // $('.weaponImage').html('<img id="weaponPic" src="image/'+ aWeapon + '.png" />');
         // $('.monsterImage').append(aMonster);
             // $('.monsterName').text(aMonster.currentMonster.name);

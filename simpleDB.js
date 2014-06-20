@@ -12,7 +12,7 @@ weaponType = [
     "broom", 
     "potion", 
     "whip", 
-    "bow_and_arrow", 
+    "bowandarrow", 
     "iphone", 
     "sword", 
     "lightning_bolt", 

@@ -34,6 +34,7 @@ $(function() {
 
         aPlayer = new Player(chosenPlayerId);
         aScoreboard = new Scoreboard;
+        aScoreboard.drawScoreboard();
 
         // Attach Events
  
@@ -46,6 +47,8 @@ $(function() {
     var startGame = function(){
         $('.playerSelector').addClass('inactive');
         $('.gameplay').removeClass('inactive');
+        $('.health').removeClass('inactive');
+        $('.score').removeClass('inactive');
         $('.selected').removeClass('selected');
 
     };
