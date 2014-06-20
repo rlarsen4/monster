@@ -25,7 +25,7 @@ players = [
             image: "amazon.png",
             name: "Amazon",
             bio: "Warrior Woman of the Western Wilderness.",
-            weapon: weaponType[1],
+            weapon: weaponType[11],
             health: 100,
             score: 0
     },
@@ -34,7 +34,7 @@ players = [
             image: "elf.png",
             name: "Elf",
             bio: "Small in size, fleet of foot.",
-            weapon: weaponType[2],
+            weapon: weaponType[12],
             health: 100,
             score: 0
     },
@@ -43,7 +43,7 @@ players = [
         image: "human.png",
         name: "Human",
         bio: "Pascal's triangle, you guys. Pascal's triangle.",
-        weapon: weaponType[1],
+        weapon: weaponType[13],
         health: 100,
         score: 0
     },
@@ -52,7 +52,7 @@ players = [
         image: "knight.png",
         name: "knight",
         bio: "Sword to protect the king, my liege",
-        weapon: weaponType[2],
+        weapon: weaponType[14],
         health: 100,
         score: 0
     },
@@ -61,7 +61,7 @@ players = [
         image: "wizard.png",
         name: "Wizard",
         bio: "There is no dark magic but in the dark hearts of the wicked.",
-        weapon: weaponType[2],
+        weapon: weaponType[15],
         health: 100,
         score: 0
     },
@@ -70,7 +70,7 @@ players = [
         image: "t-rex.png",
         name: "T-Rex",
         bio: "RRRRAAAAARRRRR! RRRAaagggRRR!",
-        weapon: weaponType[2],
+        weapon: weaponType[16],
         health: 100,
         score: 0
     },
