@@ -20,8 +20,8 @@
             </div>
             <div class="monster">
                 <div class="monsterBio"> 
-                    <div>Health: <span class="healthBanner"></span></div>
-                    <div>Score: <span class="scoreBanner"></span></div>
+                    <div>Health: <span class="healthBanner">100</span></div>
+                    <div>Score: <span class="scoreBanner">0</span></div>
                     <div class="monsterBioBanner"></div>
                 </div>                
             </div>

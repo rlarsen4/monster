@@ -52,7 +52,7 @@
         </div>
         <div>
             <div class="tile goalTile"></div>
-            *LEVEL BOSS.
+            *END OF LEVEL.
         </div>
         </fieldset>
     </div>

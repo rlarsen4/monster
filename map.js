@@ -23,6 +23,7 @@ var MapObject = function() {
             $('.attack').addClass('pickUp');
             $('.pickUp').removeClass('inactive');
             $('.attack').removeClass('attack');
+            aMonster = [];
             return aWeapon;
 
         } else {
@@ -37,6 +38,7 @@ var MapObject = function() {
             $('.pickUp').addClass('attack');
             $('.pickUp').removeClass('inactive');
             $('.pickUp').removeClass('pickUp');
+            aWeapon = [];
             return aMonster;
         }
     };

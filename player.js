@@ -17,7 +17,6 @@
         this.attack = function () {
             
             var enemyStrength = 6;
-            console.log(enemyStrength);
             
             var newAttack = d12.roll();
             if (newAttack === 0) {
@@ -25,29 +24,31 @@
                 // $('gamePlay').text ("The" + aMonster.name + "has a strength of :" aMonster.level + "your attack was a :" + newAttack);
                 console.log(newAttack);
             }
-            console.log("Your roll: " + newAttack);
             
             if (newAttack >= enemyStrength) {
                 aPlayer.score = parseInt(aPlayer.score) + 100;
                 $('.scoreBanner').text(aPlayer.score);
                 $('.scoreSpan').text(aPlayer.score);
-                $('.gamePlay').append("<br>You win. Your Score: " + aPlayer.score);
+                $('.gamePlay').text("You win. + 100");
                 $('.attack').addClass('inactive');
+                $('.dpad').removeClass('inactive');
                 
             }
             else {
                 var enemyAttack = d12.roll();
                 if (enemyAttack) {
-                console.log("you missed");
-                console.log("Enemy's attack: " + enemyAttack);
+                $('.gamePlay').text("You missed");
+                $('.gamePlay').append("<br>Enemy's attack: " + enemyAttack);
                 aPlayer.health -= enemyAttack;
-                $('gamePlay').text("Your score: " + aPlayer.score + " Your health: " + aPlayer.health);
-                $('attack').addClass('inactive');
+                $('.gamePlay').append("<br> -" + enemyAttack + " health.");
+                $('.healthBanner').text(aPlayer.health);
+                $('.healthSpan').text(aPlayer.health);
+                $('.dpad').addClass('inactive');
                 if (aPlayer.health <= 0) {
                     aPlayer.health = 0;
 
                         console.log("Your Health: " + aPlayer.health);
-                        alert("GAME OVER");
+                        gameover();
                     }
                 }     
             }        
@@ -71,7 +72,8 @@
             
         // Player can pick up a potion
         this.pickup = function() {
-            if(aWeapon){
+            console.log("i'm picking up what you're putting down.")
+            if(aWeapon > characterList[0][0]){
                 $('gamePlay').text("You have picked up the" + aWeapon.name);
                 // $('.weaponImage').html('<img id="weaponPic" src="image/'+ aWeapon + '.png" />');
 

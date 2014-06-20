@@ -38,9 +38,9 @@ $(function() {
 
         // Attach Events
  
-        $('.attack').on("click", aPlayer.attack);
+        $('.attack').on("click",  aPlayer.attack);
         $('.runAway').on("click", aPlayer.runAway);
-        $('.pickUp').on("click", aPlayer.pickup);
+        $('.attack').on("click", aPlayer.pickup);
     };
 
 /*Button click to start game*/
