@@ -59,4 +59,4 @@
 </div>
 
 <link rel="stylesheet" type="text/css" href="styles.css"> <!-- Take out during clean-up.-->
-<?php include(scriptLinks.php) ?>
+<?php include("scriptLinks.php") ?>

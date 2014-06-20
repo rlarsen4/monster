@@ -1,4 +1,4 @@
-<?php include(scriptLinks.php); ?>
+<?php include("scriptLinks.php"); ?>
 
 <!doctype html>
 <html lang="en">
@@ -51,35 +51,3 @@
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
