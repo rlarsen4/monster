@@ -22,4 +22,3 @@
     <div class="runAway">Runaway</div>
     <div class="quit">Quit</div>
 </div>
-<?php include("scriptLinks.php"); ?>

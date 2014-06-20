@@ -6,5 +6,4 @@
     </fieldset>
 </div>
 
-<?php include(scriptLinks.php) ?>
 

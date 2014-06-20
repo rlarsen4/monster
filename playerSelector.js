@@ -4,6 +4,7 @@ $(function() {
     var makeHomePage = function(){
         var listPlayers = characterList[1];
         var howManyHeroes = listPlayers.length;
+        console.log("length: " + howManyHeroes);
 
         for (i = 0; i < howManyHeroes; i++) {
             $('.playerSelectorFieldset').append("<div class='playerSelectorButton' id='"
@@ -14,8 +15,10 @@ $(function() {
                 + "'><br>"
                 + listPlayers[i].name
                 + "<br></div>");
-            }
-            $('.playerSelectorFieldset').append("<div class='startGameButton'>Start Game</div>");
+                console.log('in the loop' + i);
+        }
+        console.log('out of the loop');
+        $('.playerSelectorFieldset').append("<div class='startGameButton'>Start Game</div>");
     };
 
 /*Choose Player, Show Start Button*/
@@ -60,28 +63,4 @@ $(function() {
     $('.playerSelectorFieldset').on('click', '.startGameButton', startGame);
 
     $('.playerSelectorFieldset').on('click', '.playerSelectorButton', choosePlayer);
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 });

@@ -1,4 +1,3 @@
-<?php include("scriptLinks.php"); ?> 
 
 <!-- <link rel="stylesheet" href="styles.css"> -->
 <div class="header">
