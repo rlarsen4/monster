@@ -8,4 +8,3 @@
     <h3>Final Score: <span class="finalScore"></span></h3>
     <div class="replay">play again?</div>
 </div>
-<?php include("scriptLinks.php") ?>
