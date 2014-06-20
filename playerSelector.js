@@ -48,6 +48,7 @@ $(function() {
     var startGame = function(){
         $('.playerSelector').addClass('inactive');
         $('.gameplay').removeClass('inactive');
+        $('.selected').removeClass('selected');
         console.log('something was clicked');
     };
 
