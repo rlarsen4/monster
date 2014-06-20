@@ -41,6 +41,7 @@ li {
 }
 
 .playerSelectorFieldset {
+	min-height: 450px;
 	float: left;
 	min-width: 70%;
 	position: relative;
@@ -62,13 +63,40 @@ li {
 
 .startGameButton {
 	display: none;
-	width: 100px;
+	width: 150px;
 	padding: 10px;
 	float: right;
 	position: absolute;
 	bottom: 5px;
 	right: 5px;
-	background-color: #ccc;
+	/*background-color: #ccc;*/
+}
+
+.startGameButton {
+  background: #1eff05;
+  background-image: -webkit-linear-gradient(top, #1eff05, #0b8a13);
+  background-image: -moz-linear-gradient(top, #1eff05, #0b8a13);
+  background-image: -ms-linear-gradient(top, #1eff05, #0b8a13);
+  background-image: -o-linear-gradient(top, #1eff05, #0b8a13);
+  background-image: linear-gradient(to bottom, #1eff05, #0b8a13);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.startGameButton:hover {
+  background: #aabdaf;
+  background-image: -webkit-linear-gradient(top, #aabdaf, #010f04);
+  background-image: -moz-linear-gradient(top, #aabdaf, #010f04);
+  background-image: -ms-linear-gradient(top, #aabdaf, #010f04);
+  background-image: -o-linear-gradient(top, #aabdaf, #010f04);
+  background-image: linear-gradient(to bottom, #aabdaf, #010f04);
+  text-decoration: none;
 }
 
 /** Game Play **/
