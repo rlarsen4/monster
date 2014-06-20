@@ -61,12 +61,12 @@
 
         this.runAway = function() {
             myRoll = d2.roll();
-            if(myRoll === 0) {
-                // aMap.currLocation = aMap.prevLocation;
+            if(myRoll == 0) {
+                aMap.currLocation = aMap.prevLocation;
                 console.log('rolled a zero');
             }
             else {
-                // aMap.currLocation = aMap.currLocation;
+                aMap.currLocation = aMap.currLocation;
                 console.log('rolled a one');
 
             }
