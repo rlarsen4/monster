@@ -77,57 +77,64 @@ monster = [
             image: "image/vampire.png",
             bio: "I'm a vampire, I hate garlic.",
             level: 6,
-            weapon: weaponType[0] 
+            weapon: weaponType[11] 
         },
 
         monsterC = {
             name: "Swamp Man",
             image: "image/swampman.png",
             bio: "Me Smell Funny.",
-            level: 6,
-            weapon: weaponType[0] 
+            level: 5,
+            weapon: weaponType[12] 
         },
 
         monsterD = {
             name: "Lizard Man",
-            image: "image/swampman.png",
+            image: "image/lizardman.png",
             bio: "I'm a cold-blooded killer, but a hot-blooded lover.",
-            level: 6,
-            weapon: weaponType[0] 
+            level: 5,
+            weapon: weaponType[13] 
         },
 
         monsterE = {
-            name: "Giant Spider",
-            image: "image/giantspider.png",
-            bio: "Step into my parlor, my precious little fly...",
-            level: 6,
-            weapon: weaponType[0] 
+            name: "Scorpion",
+            image: "image/scorpion.png",
+            bio: "I'm a cold-blooded killer, but a hot-blooded lover.",
+            level: 7,
+            weapon: weaponType[14] 
         },
 
         monsterF = {
-            name: "Supermodel",
-            image: "image/skeleton.png",
-            bio: "Sticks and stones may break my bones, so watch out, willya?",
-            level: 6,
-            weapon: weaponType[0] 
+            name: "Giant Spider",
+            image: "image/giantspider.png",
+            bio: "Step into my parlor, my precious little fly...",
+            level: 7,
+            weapon: weaponType[15] 
         },
 
         monsterG = {
+            name: "Supermodel",
+            image: "image/skeleton.png",
+            bio: "Sticks and stones may break my bones, so watch out, willya?",
+            level: 5,
+            weapon: weaponType[16] 
+        },
+
+        monsterH = {
             name: "Werewolf",
             image: "image/werewolf.png",
             bio: "Howling at the moon.",
             level: 6,
-            weapon: weaponType[0] 
+            weapon: weaponType[17] 
         },
 
 
-        monsterC = {
+        monsterI = {
             name: "Witch",
             image: "image/witch.png",
-            bio: "ouble, double toil and trouble; Fire burn, and cauldron bubble.",
+            bio: "Double, double toil and trouble; Fire burn, and cauldron bubble.",
             level: 6,
-            weapon: weaponType[0] 
+            weapon: weaponType[18] 
         },
-
     ]
 ]
