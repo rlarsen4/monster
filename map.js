@@ -8,6 +8,7 @@ var MapObject = function() {
         $(currLocationId).removeClass('visitedTile');
         $(currLocationId).removeClass('goalTile');
         $(currLocationId).addClass('activeTile');
+        $('.attack').removeClass('inactive');
 
     };
 
