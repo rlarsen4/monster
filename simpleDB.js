@@ -1,7 +1,22 @@
 var characterList = [
 //index 0 = weapon type
 weaponType = [
-    "potion, club, sleep_spell, slime, tail, neuro_poison, blood_poison, bone, claws, broom, potion, whip, bow_and_arrow, iphone, sword, lightning_bolt, dentures"
+    "potion", 
+    "club", 
+    "sleep_spell", 
+    "slime", "tail", 
+    "neuro_poison", 
+    "blood_poison", 
+    "bone", 
+    "claws", 
+    "broom", 
+    "potion", 
+    "whip", 
+    "bow_and_arrow", 
+    "iphone", 
+    "sword", 
+    "lightning_bolt", 
+    "dentures"
 ],
 
 //index 1 = player
@@ -77,7 +92,7 @@ monster = [
             image: "image/vampire.png",
             bio: "I'm a vampire, I hate garlic.",
             level: 6,
-            weapon: weaponType[11] 
+            weapon: weaponType[2] 
         },
 
         monsterC = {
@@ -85,7 +100,7 @@ monster = [
             image: "image/swampman.png",
             bio: "Me Smell Funny.",
             level: 5,
-            weapon: weaponType[12] 
+            weapon: weaponType[3] 
         },
 
         monsterD = {
@@ -93,7 +108,7 @@ monster = [
             image: "image/lizardman.png",
             bio: "I'm a cold-blooded killer, but a hot-blooded lover.",
             level: 5,
-            weapon: weaponType[13] 
+            weapon: weaponType[4] 
         },
 
         monsterE = {
@@ -101,7 +116,7 @@ monster = [
             image: "image/scorpion.png",
             bio: "I'm a cold-blooded killer, but a hot-blooded lover.",
             level: 7,
-            weapon: weaponType[14] 
+            weapon: weaponType[5] 
         },
 
         monsterF = {
@@ -109,7 +124,7 @@ monster = [
             image: "image/giantspider.png",
             bio: "Step into my parlor, my precious little fly...",
             level: 7,
-            weapon: weaponType[15] 
+            weapon: weaponType[6] 
         },
 
         monsterG = {
@@ -117,7 +132,7 @@ monster = [
             image: "image/skeleton.png",
             bio: "Sticks and stones may break my bones, so watch out, willya?",
             level: 5,
-            weapon: weaponType[16] 
+            weapon: weaponType[7] 
         },
 
         monsterH = {
@@ -125,7 +140,7 @@ monster = [
             image: "image/werewolf.png",
             bio: "Howling at the moon.",
             level: 6,
-            weapon: weaponType[17] 
+            weapon: weaponType[8] 
         },
 
 
@@ -134,7 +149,7 @@ monster = [
             image: "image/witch.png",
             bio: "Double, double toil and trouble; Fire burn, and cauldron bubble.",
             level: 6,
-            weapon: weaponType[18] 
+            weapon: weaponType[9] 
         },
     ]
 ]

@@ -1,4 +1,4 @@
-$(function() {
+
 
 var aController = new Controller;
 var aMap = new MapObject;  
@@ -46,6 +46,8 @@ var keyGotPusheded = function  (e) {
     }
     // body...
 }
+
+$(function() {
 
 //event listeners
 // aController.getLocation();
