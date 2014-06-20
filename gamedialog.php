@@ -20,7 +20,9 @@
             </div>
             <div class="monster">
                 <div class="monsterBio"> 
-
+                    <div>Health: <span class="healthBanner"></span></div>
+                    <div>Score: <span class="scoreBanner"></span></div>
+                    <div class="monsterBioBanner"></div>
                 </div>                
             </div>
             <div class="weaponContainer">

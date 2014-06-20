@@ -1,6 +1,6 @@
    
 
-    var Player = function(selectedPlayer){
+    var Player = function(selectedPlayer, aMonster){
         
         this.name = [characterList[1][selectedPlayer].name];
         this.bio = [characterList[1][selectedPlayer].bio];
@@ -8,12 +8,6 @@
         this.health = [characterList[1][selectedPlayer].health];
         this.score = [characterList[1][selectedPlayer].score];
         this.image = [characterList[1][selectedPlayer].image];
-        
-        console.log(this.name);
-        console.log (this.health);
-        console.log(this.score);
-        // console.log(aMonster);
-
 
         // methods
         d12 = new Dice(12);
@@ -23,7 +17,7 @@
         this.attack = function () {
             
             var enemyStrength = 6;
-            // console.log(enemyStrength);
+            console.log(enemyStrength);
             
             var newAttack = d12.roll();
             if (newAttack === 0) {
@@ -35,8 +29,10 @@
             
             if (newAttack >= enemyStrength) {
                 aPlayer.score = parseInt(aPlayer.score) + 100;
-                console.log("you win. Your Score: " + aPlayer.score);
-                $('attack').addClass('inactive');
+                $('.scoreBanner').text(aPlayer.score);
+                $('.scoreSpan').text(aPlayer.score);
+                $('.gamePlay').append("<br>You win. Your Score: " + aPlayer.score);
+                $('.attack').addClass('inactive');
                 
             }
             else {
