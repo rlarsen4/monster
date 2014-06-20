@@ -4,7 +4,6 @@ $(function() {
     var makeHomePage = function(){
         var listPlayers = characterList[1];
         var howManyHeroes = listPlayers.length;
-        console.log("length: " + howManyHeroes);
 
         for (i = 0; i < howManyHeroes; i++) {
             $('.playerSelectorFieldset').append("<div class='playerSelectorButton' id='"
@@ -15,9 +14,8 @@ $(function() {
                 + "'><br>"
                 + listPlayers[i].name
                 + "<br></div>");
-                console.log('in the loop' + i);
         }
-        console.log('out of the loop');
+
         $('.playerSelectorFieldset').append("<div class='startGameButton'>Start Game</div>");
     };
 
@@ -32,27 +30,24 @@ $(function() {
         $('.startGameButton').show();
 
         var chosenPlayerId = this.id;
-        console.log(chosenPlayerId);
+
 
         aPlayer = new Player(chosenPlayerId);
-        console.log(aPlayer.name);
         aScoreboard = new Scoreboard;
 
         // Attach Events
-        // 
+ 
         $('.attack').on("click", aPlayer.attack);
         $('.runAway').on("click", aPlayer.runAway);
         $('.pickUp').on("click", aPlayer.pickup);
-
-        console.log('You chose: '+ chosenPlayerId);
     };
 
 /*Button click to start game*/
     var startGame = function(){
         $('.playerSelector').addClass('inactive');
         $('.gameplay').removeClass('inactive');
-        // $('.selected').removeClass('selected');
-        // console.log('something was clicked');
+        $('.selected').removeClass('selected');
+
     };
 
 
